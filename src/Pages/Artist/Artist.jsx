@@ -21,7 +21,7 @@ const Artist = () => {
       />
       <div className={styles.container}>
         <div className={styles.top_banner}>
-          <img alt="tmg" src={flutel} />
+          <img className={styles.flut} alt="tmg" src={flutel} />
           <div className={styles.music1}>
             <img alt="tmg" src={musicl} />
           </div>
@@ -34,14 +34,14 @@ const Artist = () => {
           <div className={styles.music2}>
             <img alt="tmg" src={musicr} />
           </div>
-          <img alt="tmg" src={fluter} />
+          <img className={styles.flut} alt="tmg" src={fluter} />
         </div>
         <div className={styles.card_box}>
           <div className={styles.content}>
             <div className={styles.pic_card}>
               <div className={styles.pic_content}>
                 <img alt="tmg" className={styles.frame_left} src={framel} />
-                <img alt="tmg" src={artistimg} />
+                <img alt="tmg" className={styles.artist_imge} src={artistimg} />
                 <img alt="tmg" className={styles.frame_right} src={framer} />
               </div>
             </div>

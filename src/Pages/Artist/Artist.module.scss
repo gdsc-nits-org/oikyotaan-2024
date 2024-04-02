@@ -25,7 +25,7 @@
 .top_content {
   color: wheat;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 3rem;
   display: flex;
   margin-top: 2rem;
   flex-direction: column;
@@ -48,11 +48,11 @@
 
 // Card styles
 .card_box {
-  width: 1152px;
-  height: 423px;
+  width: 72rem;
+  height: 27rem;
   margin-top: 5rem;
   background-image: url(/artist_assets/card_img.svg);
-  padding: 90px;
+  padding: 5.625rem;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -88,7 +88,9 @@
 
 .pic_card {
   flex: 1 0 auto;
-  margin-right: 20px;
+  width: 22.313rem;
+  height: 13.636rem;
+  margin-right: 1.25rem;
 }
 
 .pic_card img {
@@ -106,14 +108,102 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 32px;
+  font-size: 2.302rem;
   line-height: 36.83px;
   margin-bottom: 19px;
   font-family: var(--font-1);
 }
 
 .text_card p {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 24.38px;
   font-family: var(--font-1);
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .artist_page {
+    overflow-x: hidden;
+  }
+  .music1 {
+    display: none;
+  }
+  .music2 {
+    display: none;
+  }
+  .flut {
+    display: none;
+  }
+  .container {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+  .top_banner {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    margin: auto;
+  }
+  .top_banner img {
+    width: 4rem;
+  }
+  .top_content img {
+    width: 5rem;
+  }
+  .top_text {
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .bg_img {
+    height: 250vh;
+  }
+  .artist_page {
+    width: auto;
+  }
+  .card_box {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 90vw;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap !important;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7rem;
+  }
+
+  .artist_pic {
+    padding-left: 60px;
+  }
+
+  .text_card {
+    margin: 0 !important;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    width: 80vw !important;
+  }
+
+  .text_card h2 {
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 14px;
+  }
+
+  .text_card p {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 22px;
+  }
 }
