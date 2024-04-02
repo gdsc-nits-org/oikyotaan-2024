@@ -78,6 +78,27 @@ const Artist = () => {
             </div>
           </div>
         </div>
+        <div className={styles.card_box}>
+          <div className={styles.content}>
+            <div className={styles.pic_card}>
+              <div className={styles.pic_content}>
+                <img alt="tmg" className={styles.frame_left} src={framel} />
+                <img alt="tmg" src={artistimg} />
+                <img alt="tmg" className={styles.frame_right} src={framer} />
+              </div>
+            </div>
+            <div className={styles.text_card}>
+              <h2>SNIGDHAJIT</h2>
+              <p>
+                Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                libero et velit interdum, ac aliquet odio mattis.Qorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                interdum, ac aliquet odio mattis.Qorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Nunc vulputate
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
