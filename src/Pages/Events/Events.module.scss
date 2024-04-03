@@ -1,0 +1,62 @@
+.TopDiv {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.TextParent {
+  font-family: Snippet;
+  font-weight: 400;
+  color: azure;
+  // background-color: red;
+  font-size: 4rem;
+  position: relative;
+  top: 20vh;
+  padding-left: 6vw;
+  height: 20%;
+  width: 40%;
+}
+.BottomImage {
+  position: relative;
+  // background-color: aqua;
+  bottom: 0;
+}
+.ParentDiv {
+  background-color: #403571;
+  background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1712137199/pngwing_3_slripp.webp);
+}
+.BottomDiv {
+  background-image: none;
+  display: flex;
+  flex-direction: column;
+  margin: 10vh 40vh 10vh 30vh;
+  border: 0.1vw solid #ffffff;
+  height: 70%;
+  width: 70%;
+  background-color: #433672;
+  border-radius: 2rem;
+}
+
+.EventImg {
+  padding-top: 10%;
+  margin: 0 auto;
+}
+.EventText {
+  font-weight: 300;
+  font-family: Montserrat;
+  padding: 10% 10% 5% 10%;
+  color: aliceblue;
+}
+.SliderDiv {
+  display: flex;
+  flex-direction: row;
+  background-color: #433672;
+}
+h1 {
+  color: antiquewhite;
+  margin-left: 10vw;
+  font-weight: 200;
+}
+button {
+  background-color: #433672;
+  border: transparent;
+}
