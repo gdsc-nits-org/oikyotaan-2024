@@ -3,6 +3,28 @@ width: 100%;
 overflow: hidden;
 max-height: fit-content;
 }
+.top{
+    height:4rem;
+    width:100%;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    white-space: nowrap;
+.slide{
+    display: inline-block;
+    animation: 15s slide infinite linear;
+}
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+       transform: translateX(-100%);
+        
+    }
+}
+
 .footer {
     height: 29rem;
     padding: 0;
@@ -83,6 +105,7 @@ max-height: fit-content;
     justify-content: center;
     position: relative;
     bottom: 2rem;
+    z-index: 1000;
 }
 .gdsctext {
     color: white;
