@@ -1,5 +1,6 @@
 import { Button } from "../../Components";
 import { useFetchOnAction } from "../../Hooks";
+import { Sponsors } from '../../Components'
 
 import style from "./Home.module.scss";
 
@@ -18,11 +19,7 @@ const Home = () => {
         <h1>Loading...</h1>
       ) : (
         <>
-          <h1>Home Page</h1>
-          {error ? <h2 className={style.error}>{error}</h2> : <h2>{data?.msg}</h2>}
-          <Button type="button" onClick={handleClick}>
-            Health Check
-          </Button>
+          <Sponsors />
         </>
       )}
     </main>
