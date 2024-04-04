@@ -1,37 +1,66 @@
 .TopDiv {
   display: flex;
-  justify-content: space-around;
+  // background-color: rgb(71, 52, 52);
+  justify-content: center;
   flex-direction: row;
+  align-items: center;
 }
 .TextParent {
   font-family: Snippet;
   font-weight: 400;
   color: azure;
-  // background-color: red;
   font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  top: 20vh;
-  padding-left: 6vw;
-  height: 20%;
-  width: 40%;
-}
-.BottomImage {
-  position: relative;
-  // background-color: aqua;
-  bottom: 0;
+  top: 2rem;
+  justify-content: center;
 }
 .ParentDiv {
+  display: flex;
+  // background-color: rgb(71, 52, 52);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #403571;
   background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1712137199/pngwing_3_slripp.webp);
+}
+.Leftdrumclass {
+  height: 9rem;
+  width: 9rem;
+}
+.Rightdrumclass {
+  height: 9rem;
+  width: 9rem;
+}
+.Lftdrum {
+  transform: scaleX(-1);
+}
+// .LeftDhol{
+//   position: relative;
+//   background-color: darkblue;
+// }
+// .RightDhol{
+//   position: relative;
+//   background-color: aquamarine;
+// }
+.BottomImage {
+  position: relative;
+  top: -2rem;
+}
+.bottomParent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .BottomDiv {
   background-image: none;
   display: flex;
   flex-direction: column;
-  margin: 10vh 40vh 10vh 30vh;
+  margin-left: 9vw;
+  margin-right: 9vw;
   border: 0.1vw solid #ffffff;
-  height: 70%;
-  width: 70%;
   background-color: #433672;
   border-radius: 2rem;
 }
@@ -43,20 +72,53 @@
 .EventText {
   font-weight: 300;
   font-family: Montserrat;
-  padding: 10% 10% 5% 10%;
+  padding: 5% 10% 5% 10%;
   color: aliceblue;
 }
 .SliderDiv {
   display: flex;
   flex-direction: row;
-  background-color: #433672;
 }
-h1 {
+.h1 {
   color: antiquewhite;
-  margin-left: 10vw;
+  text-align: center;
   font-weight: 200;
 }
 button {
   background-color: #433672;
   border: transparent;
+}
+
+.DholEvent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 10%;
+}
+.ParentDiv {
+  overflow-x: hidden;
+}
+@media screen and (max-width= 1395px) {
+  .BottomDiv {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .TopDiv {
+    scale: 0.7;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .TopDiv {
+    scale: 0.6;
+  }
+}
+@media screen and (max-width: 700px) {
+  .TopDiv {
+    scale: 0.5;
+  }
+  .BottomDiv {
+    scale: 0.9;
+  }
 }
