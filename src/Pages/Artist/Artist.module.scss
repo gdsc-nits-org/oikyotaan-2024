@@ -1,33 +1,37 @@
 .artist_page {
   position: relative;
   width: 100%;
-  height: 200vh;
   display: flex;
+  min-height: 100vh;
   justify-content: center;
   background: linear-gradient(to bottom, #3d029d 0%, #3f1560 100%);
 }
+
 .bg_img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 200vh;
+  height: 190vh;
 }
+
 .container {
-  // z-index: 20;
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .musical {
   width: 14rem;
 }
+
 .musicalr {
   width: 14rem;
   transform: scaleX(-1);
 }
+
 .dholl {
   transform: scaleX(-1);
 }
@@ -37,6 +41,7 @@
   display: flex;
   gap: 1rem;
 }
+
 .top_content {
   color: rgb(255, 255, 255);
   font-weight: 400;
@@ -45,6 +50,7 @@
   margin-top: 2rem;
   flex-direction: column;
 }
+
 .top_text {
   margin-top: 2rem;
   margin-left: 1.5rem;
@@ -56,16 +62,16 @@
   margin-left: -6rem;
   margin-top: 5rem;
 }
+
 .music2 {
   margin-right: -6rem;
   margin-top: 5rem;
 }
 
-// Card styles
 .card_box {
   width: 72rem;
   height: 27rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   background-image: url(/artist_assets/card_img.svg);
   background-size: cover;
   background-repeat: none;
@@ -76,11 +82,12 @@
   border-radius: 18px;
   border: 4px solid #3f1560;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: 10rem;
   backdrop-filter: blur(20px);
 }
+
 .content {
   display: flex;
   justify-content: space-between;
@@ -93,11 +100,13 @@
   display: flex;
   position: relative;
 }
+
 .frame_left {
   position: absolute;
   margin-top: -3rem;
   margin-left: -3rem;
 }
+
 .frame_right {
   position: absolute;
   margin-top: 3.1rem;
@@ -137,6 +146,7 @@
   line-height: 24.38px;
   font-family: var(--font-1);
 }
+
 .pic_content {
   display: flex;
   position: relative;
@@ -145,7 +155,7 @@
 .frame_left,
 .artist_imge,
 .frame_right {
-  max-width: 100%; /* Make images responsive */
+  max-width: 100%;
   height: auto;
 }
 
@@ -154,42 +164,48 @@
   .artist_page {
     overflow-x: hidden;
   }
+
   .music1 {
     display: none;
   }
+
   .music2 {
     display: none;
   }
+
   .flut {
     display: none;
   }
+
   .content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .pic_content {
     margin-left: 0.5rem;
     scale: 0.7;
   }
+
   .underline {
     margin-left: 0.7rem;
   }
-  // .container {
-  //   padding-left: 4rem !important;
-  //   padding-right: 4rem !important;
-  // }
+
   .dholl {
     width: 4rem;
   }
+
   .dholr {
     width: 4rem;
   }
+
   .top_banner img {
     margin-top: -0.2rem;
     width: 4rem;
   }
+
   .top_content img {
     width: 6rem;
   }
@@ -203,11 +219,13 @@
   }
 
   .bg_img {
-    height: 270vh;
+    height: 275vh;
   }
+
   .artist_page {
     width: auto;
   }
+
   .card_box {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -249,11 +267,13 @@
     line-height: 22px;
   }
 }
+
 @media screen and (max-width: 400px) {
   .pic_content {
     scale: 0.6;
     margin-left: 0.5rem !important;
   }
+
   .underline {
     margin-left: 0.7rem;
   }
