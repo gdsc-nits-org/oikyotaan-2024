@@ -65,6 +65,7 @@ const Navbar = () => {
             <img
               className={styles.design}
               src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712169046/Oikyotaan/vecteezy_text-divider-calligraphic-ornament-vintage-decorations_11839102-removebg-preview_1_nro44d.svg"
+              alt="design"
             />
           </div>
           <div className={styles.linkParentMobile}>
@@ -74,6 +75,7 @@ const Navbar = () => {
             <img
               className={styles.design}
               src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712169046/Oikyotaan/vecteezy_text-divider-calligraphic-ornament-vintage-decorations_11839102-removebg-preview_1_nro44d.svg"
+              alt="design"
             />
           </div>
           <div className={styles.linkParentMobile}>
@@ -83,6 +85,7 @@ const Navbar = () => {
             <img
               className={styles.design}
               src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712169046/Oikyotaan/vecteezy_text-divider-calligraphic-ornament-vintage-decorations_11839102-removebg-preview_1_nro44d.svg"
+              alt="design"
             />
           </div>
           <div className={styles.linkParentMobile}>
@@ -92,6 +95,7 @@ const Navbar = () => {
             <img
               className={styles.design}
               src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712169046/Oikyotaan/vecteezy_text-divider-calligraphic-ornament-vintage-decorations_11839102-removebg-preview_1_nro44d.svg"
+              alt="design"
             />
           </div>
           <div className={styles.linkParentMobile}>
@@ -101,11 +105,13 @@ const Navbar = () => {
             <img
               className={styles.design}
               src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712169046/Oikyotaan/vecteezy_text-divider-calligraphic-ornament-vintage-decorations_11839102-removebg-preview_1_nro44d.svg"
+              alt="design"
             />
           </div>
           <img
             className={styles.design2}
             src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712169457/Oikyotaan/OIKYOTAAN_LOGO_WHITE_BG_DATE_1_lrruew.svg"
+            alt="oikyotaan logo"
           />
         </div>
       </div>

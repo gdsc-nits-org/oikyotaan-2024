@@ -8,12 +8,14 @@ const Footer = () => {
           <img
             className={styles.slider}
             src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712073184/Oikyotaan/igw7l9chpiq0cfgmxzbv.png"
+            alt="slider"
           />
         </div>
         <div className={styles.slide}>
           <img
             className={styles.slider}
             src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712073184/Oikyotaan/igw7l9chpiq0cfgmxzbv.png"
+            alt="slider"
           />
         </div>
       </div>
@@ -33,6 +35,7 @@ const Footer = () => {
                   <img
                     className={styles.logo2}
                     src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712052813/Oikyotaan/irum766hksgshwyvllax.svg"
+                    alt="location"
                   />
                   <p className={styles.contactdetails}>
                     NIT Silchar, Assam, India 788010
@@ -42,6 +45,7 @@ const Footer = () => {
                   <img
                     className={styles.logo2}
                     src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712052813/Oikyotaan/ae1w0uige95quqbamhhm.svg"
+                    alt="phone"
                   />
                   <div className={styles.contactdetails}>03842-228479</div>
                 </div>
@@ -52,6 +56,7 @@ const Footer = () => {
                     <img
                       className={styles.logo2}
                       src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712052813/Oikyotaan/zbrzxiuhtnz3g3szap26.svg"
+                      alt="facebook"
                     />
                   </a>
                   <div className={styles.contactdetails}>Facebook</div>
@@ -61,6 +66,7 @@ const Footer = () => {
                     <img
                       className={styles.logo2}
                       src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712052813/Oikyotaan/juriiplrqf4bwf4jpsdn.svg"
+                      alt="instagram"
                     />
                   </a>
                   <div className={styles.contactdetails}>Instagram</div>
@@ -77,6 +83,7 @@ const Footer = () => {
                   <img
                     className={styles.animation}
                     src="https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/hyg5xs9vkkpswxiiidp3"
+                    alt="gdsc_logo"
                   />
                 </div>
                 <div className={styles.gdsc_box}>
@@ -87,7 +94,10 @@ const Footer = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712053442/Oikyotaan/uomxsgvmtfb7lttfszyz.svg" />
+                      <img
+                        src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712053442/Oikyotaan/uomxsgvmtfb7lttfszyz.svg"
+                        alt="arrow"
+                      />
                     </a>
                   </div>
                 </div>
@@ -101,10 +111,12 @@ const Footer = () => {
           <img
             className={styles.imgtop}
             src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712057803/Oikyotaan/uhapwrvptmt7dsh2git1.svg"
+            alt="design"
           />
           <img
             className={styles.imgbottom}
             src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712057870/Oikyotaan/uvhn2ccu3qwscip1zqme.svg"
+            alt="design"
           />
         </div>
       </div>
