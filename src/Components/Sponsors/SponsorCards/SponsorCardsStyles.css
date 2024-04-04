@@ -1,13 +1,10 @@
 .grid_container{
-  /* display: grid;
-  grid-template-columns: auto auto auto; */
   place-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 
   max-width: 1024px;
-  /* border: 2px red solid; */
   margin: 0 auto;
   margin-top: 2rem;
 
