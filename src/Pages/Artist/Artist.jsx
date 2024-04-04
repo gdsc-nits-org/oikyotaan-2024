@@ -1,5 +1,5 @@
 import React from "react";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
 import styles from "./Artist.module.scss";
 import Dhol from "../../assets/AnimationData/drum_right.json";
 import underline from "../../../public/artist_assets/test_underline.svg";

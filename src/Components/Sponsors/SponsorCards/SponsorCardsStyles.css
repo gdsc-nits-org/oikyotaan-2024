@@ -3,8 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-
-  max-width: 1024px;
+  max-width: 1020px;
   margin: 0 auto;
   margin-top: 2rem;
 
@@ -12,8 +11,8 @@
 
 
 .spons_img {
-  height: 18.75rem;
-  width: 17.5rem;
+  height: 15.75rem;
+  width: 14.5rem;
   border-radius: 1.25rem;
   border: 0.25rem solid transparent;
   border-image: linear-gradient(white, rgb(241, 123, 143)) 1;
