@@ -79,6 +79,7 @@
   justify-content: space-around;
   align-items: center;
   gap: 10rem;
+  backdrop-filter: blur(20px);
 }
 .content {
   display: flex;
@@ -153,7 +154,6 @@
   .artist_page {
     overflow-x: hidden;
   }
-
   .music1 {
     display: none;
   }
@@ -180,23 +180,22 @@
   //   padding-left: 4rem !important;
   //   padding-right: 4rem !important;
   // }
-  .top_banner {
-    padding-top: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    margin: auto;
+  .dholl {
+    width: 4rem;
+  }
+  .dholr {
+    width: 4rem;
   }
   .top_banner img {
+    margin-top: -0.2rem;
     width: 4rem;
   }
   .top_content img {
-    width: 5rem;
+    width: 6rem;
   }
 
   .top_text {
-    font-size: 28px;
+    font-size: 32px;
     display: flex;
     justify-content: center;
     align-items: center;

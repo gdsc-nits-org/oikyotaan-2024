@@ -32,7 +32,7 @@ const Artist = () => {
             <div className={styles.top_text}>ARTISTS</div>
             <img className={styles.underline} alt="tmg" src={underline} />
           </div>
-          <Lottie animationData={Dhol} />
+          <Lottie animationData={Dhol} className={styles.dholr} />
           <div className={styles.music2}>
             <img
               className={styles.musicalr}
