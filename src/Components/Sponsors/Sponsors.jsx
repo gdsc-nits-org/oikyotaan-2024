@@ -3,7 +3,7 @@ import SponsorHeading from './SponsorHeading/SponsorHeading'
 import SponsorCards from './SponsorCards/SponsorCards'
 
 
-function Sponsors() {
+const Sponsors = () => {
   return (
     <div className='container'>
       <SponsorHeading />

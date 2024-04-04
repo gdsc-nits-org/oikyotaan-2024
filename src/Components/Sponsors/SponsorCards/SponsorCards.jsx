@@ -1,7 +1,7 @@
 import './SponsorCardsStyles.css'
 import Cards from './Cards'
 
-function SponsorCards() {
+const SponsorCards = () => {
   return (
     <div className='grid_container'>
       {Cards.map((item,i)=>(
