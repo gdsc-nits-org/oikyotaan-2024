@@ -1,17 +1,17 @@
 .artist_page {
   position: relative;
   width: 100%;
-  height: fit-content;
+  height: 200vh;
   display: flex;
   justify-content: center;
   background: linear-gradient(to bottom, #3d029d 0%, #3f1560 100%);
 }
 .bg_img {
-  background-size: cover;
-  background-repeat: repeat-y;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: fit-content;
+  height: 200vh;
 }
 .container {
   z-index: 20;
@@ -33,7 +33,7 @@
 }
 .top_text {
   margin-top: 2rem;
-  margin-left: 2rem;
+  margin-left: 1.7rem;
   margin-bottom: -1rem;
   font-family: var(--font-1);
 }
