@@ -59,7 +59,7 @@ const Navbar = () => {
             />
           </button>
           <div className={styles.linkParentMobile}>
-            <Link to="/" className={styles.link}>
+            <Link to="/" className={styles.link} onClick={() => setNav(!nav)}>
               Home
             </Link>
             <img
@@ -69,7 +69,7 @@ const Navbar = () => {
             />
           </div>
           <div className={styles.linkParentMobile}>
-            <Link to="/artist" className={styles.link}>
+            <Link to="/artist" className={styles.link} onClick={() => setNav(!nav)}>
               Artist
             </Link>
             <img
@@ -79,7 +79,7 @@ const Navbar = () => {
             />
           </div>
           <div className={styles.linkParentMobile}>
-            <Link to="/events" className={styles.link}>
+            <Link to="/events" className={styles.link} onClick={() => setNav(!nav)}>
               Events
             </Link>
             <img
@@ -89,7 +89,7 @@ const Navbar = () => {
             />
           </div>
           <div className={styles.linkParentMobile}>
-            <Link to="/gallery" className={styles.link}>
+            <Link to="/gallery" className={styles.link} onClick={() => setNav(!nav)}>
               Gallery
             </Link>
             <img
@@ -99,7 +99,7 @@ const Navbar = () => {
             />
           </div>
           <div className={styles.linkParentMobile}>
-            <Link to="/teams" className={styles.link}>
+            <Link to="/teams" className={styles.link} onClick={() => setNav(!nav)}>
               Team
             </Link>
             <img
