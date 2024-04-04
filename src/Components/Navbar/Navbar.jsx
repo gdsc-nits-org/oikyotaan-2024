@@ -121,13 +121,6 @@ const Navbar = () => {
           <img src={logo} alt="logo loading..." className={styles.logo} />
         </Link>
         <div className={styles.right}>
-          {/* <div className={styles.linkParent}>
-            <div className={styles.innerParent}>
-              <Link to="/" className={styles.link}>
-                Home
-              </Link>
-            </div>
-        </div> */}
           <div className={styles.linkParent}>
             <div className={styles.innerParent}>
               <Link to="/artist" className={styles.link}>
