@@ -158,6 +158,9 @@
     margin-left: 0.5rem;
     scale: 0.7;
   }
+  .underline {
+    margin-left: 0.7rem;
+  }
   .container {
     padding-left: 4rem !important;
     padding-right: 4rem !important;
@@ -214,7 +217,7 @@
     margin: 0 !important;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    margin-top: -2rem !important;
+    margin-top: -4rem !important;
     width: 80vw !important;
   }
 
@@ -230,5 +233,14 @@
     align-items: center;
     font-size: 15px;
     line-height: 22px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .pic_content {
+    scale: 0.6;
+    margin-left: 0.5rem !important;
+  }
+  .underline {
+    margin-left: 0.7rem;
   }
 }

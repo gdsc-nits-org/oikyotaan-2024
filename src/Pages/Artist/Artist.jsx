@@ -28,7 +28,7 @@ const Artist = () => {
           <img alt="tmg" src={dholl} />
           <div className={styles.top_content}>
             <div className={styles.top_text}>ARTISTS</div>
-            <img alt="tmg" src={underline} />
+            <img className={styles.underline} alt="tmg" src={underline} />
           </div>
           <img alt="tmg" src={dholr} />
           <div className={styles.music2}>
