@@ -1,4 +1,3 @@
-import React from 'react'
 import './SponsorCardsStyles.css'
 import Cards from './Cards'
 
