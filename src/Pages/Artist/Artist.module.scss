@@ -16,6 +16,17 @@
 .container {
   // z-index: 20;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.musical {
+  width: 14rem;
+}
+.musicalr {
+  width: 14rem;
+  transform: scaleX(-1);
 }
 .dholl {
   transform: scaleX(-1);
@@ -142,6 +153,7 @@
   .artist_page {
     overflow-x: hidden;
   }
+
   .music1 {
     display: none;
   }
@@ -164,10 +176,10 @@
   .underline {
     margin-left: 0.7rem;
   }
-  .container {
-    padding-left: 4rem !important;
-    padding-right: 4rem !important;
-  }
+  // .container {
+  //   padding-left: 4rem !important;
+  //   padding-right: 4rem !important;
+  // }
   .top_banner {
     padding-top: 5rem;
     display: flex;

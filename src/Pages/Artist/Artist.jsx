@@ -5,8 +5,6 @@ import Dhol from "../../assets/AnimationData/drum_right.json";
 import underline from "../../../public/artist_assets/test_underline.svg";
 import flutel from "../../../public/artist_assets/flute_left.svg";
 import fluter from "../../../public/artist_assets/flute_right.svg";
-import musicl from "../../../public/artist_assets/music_left.svg";
-import musicr from "../../../public/artist_assets/music_right.svg";
 import artistimg from "../../../public/artist_assets/artist_img.svg";
 import framel from "../../../public/artist_assets/frame_left.svg";
 import framer from "../../../public/artist_assets/frame_right.svg";
@@ -23,7 +21,11 @@ const Artist = () => {
         <div className={styles.top_banner}>
           <img className={styles.flut} alt="tmg" src={flutel} />
           <div className={styles.music1}>
-            <img alt="tmg" src={musicl} />
+            <img
+              className={styles.musical}
+              alt="tmg"
+              src="https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/lvw9ahmbohpwrdsupob8"
+            />
           </div>
           <Lottie animationData={Dhol} className={styles.dholl} />
           <div className={styles.top_content}>
@@ -32,7 +34,11 @@ const Artist = () => {
           </div>
           <Lottie animationData={Dhol} />
           <div className={styles.music2}>
-            <img alt="tmg" src={musicr} />
+            <img
+              className={styles.musicalr}
+              alt="tmg"
+              src="https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/lvw9ahmbohpwrdsupob8"
+            />
           </div>
           <img className={styles.flut} alt="tmg" src={fluter} />
         </div>
