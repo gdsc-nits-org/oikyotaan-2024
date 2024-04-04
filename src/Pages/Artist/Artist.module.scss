@@ -14,8 +14,11 @@
   height: 200vh;
 }
 .container {
-  z-index: 20;
+  // z-index: 20;
   position: absolute;
+}
+.dholl {
+  transform: scaleX(-1);
 }
 
 .top_banner {
@@ -189,7 +192,7 @@
   }
 
   .bg_img {
-    height: 250vh;
+    height: 270vh;
   }
   .artist_page {
     width: auto;

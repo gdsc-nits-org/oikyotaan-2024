@@ -1,7 +1,7 @@
 import React from "react";
+import Lottie from "lottie-react";
 import styles from "./Artist.module.scss";
-import dholl from "../../../public/artist_assets/dhol_left.svg";
-import dholr from "../../../public/artist_assets/dhol_right.svg";
+import Dhol from "../../assets/AnimationData/drum_right.json";
 import underline from "../../../public/artist_assets/test_underline.svg";
 import flutel from "../../../public/artist_assets/flute_left.svg";
 import fluter from "../../../public/artist_assets/flute_right.svg";
@@ -25,12 +25,12 @@ const Artist = () => {
           <div className={styles.music1}>
             <img alt="tmg" src={musicl} />
           </div>
-          <img alt="tmg" src={dholl} />
+          <Lottie animationData={Dhol} className={styles.dholl} />
           <div className={styles.top_content}>
             <div className={styles.top_text}>ARTISTS</div>
             <img className={styles.underline} alt="tmg" src={underline} />
           </div>
-          <img alt="tmg" src={dholr} />
+          <Lottie animationData={Dhol} />
           <div className={styles.music2}>
             <img alt="tmg" src={musicr} />
           </div>
