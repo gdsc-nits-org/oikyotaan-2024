@@ -1,7 +1,9 @@
+import { Team } from "../Team/Team";
+
 const Home = () => {
   return (
     <main>
-      <h1>Oikyotaan 2024</h1>
+      <Team/>
     </main>
   );
 };
