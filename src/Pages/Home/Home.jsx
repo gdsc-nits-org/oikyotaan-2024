@@ -1,19 +1,10 @@
-import { Button } from "../../Components";
-import { useFetchOnAction } from "../../Hooks";
-import { Sponsors } from '../../Components'
-
-import style from "./Home.module.scss";
-
+import styles from "./Home.module.scss";
+import {Sponsors} from '../../Components'
 const Home = () => {
   return (
-    <main className={style.home}>
-      {loading ? (
-        <h1>Loading...</h1>
-      ) : (
-        <>
-          <Sponsors />
-        </>
-      )}
+    <main className={styles.home}>
+      <h1>Oikyotaan 2024</h1>
+      <Sponsors />
     </main>
   );
 };

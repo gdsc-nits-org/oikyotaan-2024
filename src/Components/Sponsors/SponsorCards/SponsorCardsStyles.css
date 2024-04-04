@@ -15,12 +15,12 @@
 
 
 .spons_img {
-  height: 300px;
-  width: 280px;
-  border-radius: 20px;
-  border: 4px solid transparent;
+  height: 18.75rem;
+  width: 17.5rem;
+  border-radius: 1.25rem;
+  border: 0.25rem solid transparent;
   border-image: linear-gradient(white, rgb(241, 123, 143)) 1;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   -webkit-mask-image: radial-gradient(transparent 0 0px, #000 0px);
           mask-image: radial-gradient(transparent 0 0px, #000 0px);
   transition: border-image 0.5s;
