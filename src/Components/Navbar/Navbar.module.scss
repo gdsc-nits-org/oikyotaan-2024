@@ -67,7 +67,6 @@
   justify-content: space-around;
   height: 7rem;
   align-items: center;
-  margin-top: -1rem;
 
   .left {
     height: fit-content;
@@ -143,7 +142,7 @@
 
 @media screen and (min-width: 750px) {
   .NavbarMobile {
-    visibility: hidden;
+    display: none;
     height: 0;
   }
 
@@ -168,7 +167,6 @@
 }
 
 .mobileActive {
-  position: fixed;
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(180deg, #340459 0%, #6d2cae 100%);
   display: flex;
@@ -177,8 +175,8 @@
   align-items: center;
   justify-content: center;
   height: 67vh;
-  position: fixed;
-  bottom: 13.5rem;
+  position: relative;
+  bottom: 3.5rem;
   width: 50%;
   border-radius: 0 0 0 16px;
   .linkParentMobile {
@@ -208,6 +206,6 @@
   .mobileActive {
     height: 80vh;
     width: 40%;
-    bottom: 9rem;
+    // bottom: 9rem;
   }
 }
