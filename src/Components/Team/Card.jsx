@@ -2,10 +2,13 @@ import React from "react";
 import styles from "./card.module.scss";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { useSwiperSlide } from 'swiper/react';
 
 export const Card = ({ member }) => {
+  const swiperSlider = useSwiperSlide();
+
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${swiperSlider != null && (!swiperSlider.isActive ? styles.inActive : "")}`}>
       <div className={styles.imageFrame}></div>
       <img className={styles.profileImage} src={member.profile} alt={member.name} />
 

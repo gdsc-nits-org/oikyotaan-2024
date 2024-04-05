@@ -1,93 +1,98 @@
-.wrapper{
+.wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #3d029d 0%, #3f1560 100%);
+  padding: 7% 5%;
+
+  .bg_img {
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
     width: 100%;
-    position: relative;
+    height: 190vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .dhol {
+        width: 6rem;
+        height: 6rem;
+      }
+
+      .dholLeft {
+        transform: scale(-1, 1);
+      }
+
+      .groupTitle {
+        .heading {
+          font-size: 6.5vmin;
+        }
+        .gloory {
+          margin-top: -8%;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .pepa {
+    }
+
+    .pepaLeft {
+      transform: scale(-1, 1);
+    }
+  }
+
+  .teamDetailedContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    width: 100%;
+    gap: 50px;
 
-    background-image: url("https://res.cloudinary.com/draptrzrc/image/upload/v1712265459/oikotan/txrylgnsfahrauhxmvbd.png");
-    // background-size: cover;
-    // background-position: center;
-    background: url("https://res.cloudinary.com/draptrzrc/image/upload/v1712265459/oikotan/txrylgnsfahrauhxmvbd.png");
+    .teamContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-    padding: 7% 5%;
+      width: 100%;
 
-    .header{
+      .coreTeam {
+        width: 100%;
+
         display: flex;
-        justify-content: space-between;
-        .title{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    
-            .dhol{
-                width: 6rem;
-                height: 6rem;
-            }
-    
-            .dholLeft{
-                transform: scale(-1 , 1);
-            }
-    
-            .groupTitle{
-                .heading{
-                    font-size: 6.5vmin;;
-                }
-                .gloory{
-                    margin-top: -8%;
-                    
-                    img{
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    
-        .pepa{
-    
-        }
-    
-        .pepaLeft{
-            transform: scale(-1, 1);
-        }
-    }
-
-    .teamDetailedContainer{
-        display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        gap: 10vw;
+      }
+      .techTeam {
         width: 100%;
-        gap: 50px;
 
-        .teamContainer{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            width: 100%;
-
-            .coreTeam{
-                width: 100%;
-                
-                display: flex;
-                flex-wrap: wrap;
-                justify-content:center ;
-                align-items: center;
-                gap: 10vw;
-            }
-            .techTeam{
-                width: 100%;
-
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                gap: 10vw
-            }
-        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10vw;
+      }
     }
+  }
 }

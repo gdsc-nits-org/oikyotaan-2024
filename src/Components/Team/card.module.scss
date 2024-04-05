@@ -8,6 +8,8 @@
   justify-content: center;
   z-index: 99;
   transition: all 0.5s ease-in-out;
+  filter: none;
+  
 
   &:hover {
     .details {
@@ -21,7 +23,12 @@
 
   @media screen and (max-width: 1300px) {
     width: 15.625rem;
-    height: 21.875rem;
+    height: 20rem;
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 14.625rem;
+    height: 18.875rem;
   }
 
 
@@ -53,4 +60,8 @@
       opacity: 0;
     }
   }
+}
+
+.inActive {
+  filter: blur(2px);
 }
