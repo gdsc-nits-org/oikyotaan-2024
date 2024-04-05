@@ -14,13 +14,12 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
-    "@lottiefiles/react-lottie-player": "^3.5.3",
     "@vitejs/plugin-react": "^4.2.1",
-    "guidance-grid": "link:",
-    "lottie-react": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-lottie": "^1.2.4",
     "react-router-dom": "^6.22.2",
+    "lottie-react": "^2.4.0",
     "vite": "^5.1.4"
   },
   "devDependencies": {
@@ -36,6 +35,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "lint-staged": "^15.2.2",
+  
     "prettier": "^3.2.5",
     "sass": "^1.71.1",
     "simple-git-hooks": "^2.9.0"

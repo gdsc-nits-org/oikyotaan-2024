@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import { Home, Error } from "./Pages";
+import { Home, Error, Artist } from "./Pages";
 
 import { Navbar, Footer } from "./Components";
 import Events from "./Pages/Events/Events";
@@ -13,6 +13,7 @@ const App = () => {
       <Events />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/artist" element={<Artist />} />
         <Route path="*" element={<Error />} />
         <Route path="/events" element={<Events />} />
       </Routes>
