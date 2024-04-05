@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./card.module.scss";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub , FaLinkedin } from "react-icons/fa";
+
 import { useSwiperSlide } from 'swiper/react';
+import styles from "./card.module.scss";
 
 export const Card = ({ member }) => {
   const swiperSlider = useSwiperSlide();

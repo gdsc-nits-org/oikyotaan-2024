@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import styles from "../Team/team.module.scss";
+import Lottie from "lottie-react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import styles from "./team.module.scss";
 import data from "../../../public/db/team.json";
 import { Card } from "../../Components/Team/Card";
-import Lottie from "lottie-react";
-import drumLeft from "../Team/drum right.json";
-import { Swiper, SwiperSlide } from "swiper/react";
+import drumLeft from "./drum right.json";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -38,7 +38,7 @@ export const Team = () => {
       <div className={styles.header}>
         <div className={styles.title}>
           <div className={`${styles.dholLeft} ${styles.dhol}`}>
-            <Lottie animationData={drumLeft} loop={true} />
+            <Lottie animationData={drumLeft} loop />
           </div>
           <div className={styles.groupTitle}>
             <h1 className={styles.heading}>MEET OUR TEAM</h1>
@@ -47,7 +47,7 @@ export const Team = () => {
             </div>
           </div>
           <div className={`${styles.dholRight} ${styles.dhol}`}>
-            <Lottie animationData={drumLeft} loop={true} />
+            <Lottie animationData={drumLeft} loop />
           </div>
         </div>
       </div>
@@ -69,14 +69,14 @@ export const Team = () => {
             <Swiper
               className={styles.coreTeam}
               modules={[Autoplay, EffectCoverflow]}
-              centeredSlides={true}
+              centeredSlides
               initialSlide={Math.floor(data.core.members.length / 2)}
               slidesPerView={4}
               spaceBetween={-40}
               speed={500}
               loop
-              effect={"coverflow"}
-              grabCursor={true}
+              effect="coverflow"
+              grabCursor
               coverflowEffect={{
                 rotate: 0,
                 stretch: 0,
@@ -132,14 +132,14 @@ export const Team = () => {
             <Swiper
               className={styles.techTeam}
               modules={[Autoplay, EffectCoverflow]}
-              centeredSlides={true}
+              centeredSlides
               initialSlide={Math.floor(data.core.members.length / 2)}
               slidesPerView={4}
               spaceBetween={-40}
               speed={500}
               loop
-              effect={"coverflow"}
-              grabCursor={true}
+              effect="coverflow"
+              grabCursor
               coverflowEffect={{
                 rotate: 0,
                 stretch: 0,
