@@ -1,6 +1,6 @@
 .wrapper {
-  width: 300px;
-  height: 400px;
+  width: 18.75rem;
+  height: 25rem;
   position: relative;
 
   display: flex;
@@ -17,6 +17,11 @@
         opacity: 1;
       }
     }
+  }
+
+  @media screen and (max-width: 1300px) {
+    width: 15.625rem;
+    height: 21.875rem;
   }
 
 

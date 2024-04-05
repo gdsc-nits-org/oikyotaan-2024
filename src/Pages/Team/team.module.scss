@@ -5,13 +5,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
-    // background-image: url("https://res.cloudinary.com/draptrzrc/image/upload/v1712265459/oikotan/txrylgnsfahrauhxmvbd.png");
+    background-image: url("https://res.cloudinary.com/draptrzrc/image/upload/v1712265459/oikotan/txrylgnsfahrauhxmvbd.png");
     // background-size: cover;
     // background-position: center;
-    background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
-    linear-gradient(180deg, #3D029D -15.32%, #3F1560 84.68%);
-    ;
+    background: url("https://res.cloudinary.com/draptrzrc/image/upload/v1712265459/oikotan/txrylgnsfahrauhxmvbd.png");
 
     padding: 7% 5%;
 
