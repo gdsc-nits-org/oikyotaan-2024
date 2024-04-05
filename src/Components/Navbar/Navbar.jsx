@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.scss";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  let menuRef = useRef();
   const hamburger = {
     inactive:
       "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712134338/Oikyotaan/inactive_rojxbk.svg",
@@ -23,6 +24,16 @@ const Navbar = () => {
       e.target.style.opacity = "1";
     }, 200);
   };
+
+  useEffect(() =>{
+    let handler = (e) =>{
+      if(!menuRef.current.contains(e.target)){
+        setNav(false)
+      }
+    };
+    document.addEventListener('mousedown',handler)
+  })
+
   return (
     <div className={styles.navCont}>
       <div className={styles.NavbarMobile}>
@@ -40,9 +51,10 @@ const Navbar = () => {
           <img src={logo} className={styles.navIcons} alt="logo loading..." />
         </Link>
       </div>
-      <div className={styles.mobile}>
+      <div className={styles.mobile} >
         <div
           className={styles.mobileActive}
+          ref={menuRef}
           style={{
             display: nav === false ? "none" : "flex",
             zIndex: nav === false ? "-1" : "1000",
