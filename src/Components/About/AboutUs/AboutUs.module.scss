@@ -143,39 +143,40 @@
       letter-spacing: 0;
       font-size: 1.1rem;
     }
-    .btn_parent {
-      margin-top: 1rem;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      z-index: 3;
-      background-color: #fd5282;
-      padding: 12px 15px;
-      border-radius: 10px;
-      max-width: fit-content;
-      cursor: pointer;
-      .btn {
-        font-family: "Snippet", sans-serif;
-        font-size: 1.3rem;
-        color: #ffffff;
-        text-decoration: none;
-        text-transform: uppercase;
-        margin-top: -1px;
-        font-weight: 300;
-        z-index: 5;
-        text-align: center;
-        white-space: nowrap;
+    .parent {
+      height: 5rem;
+      .btn_parent {
+        margin-top: 1rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        z-index: 3;
+        background-color: #fd5282;
+        padding: 12px 15px;
+        border-radius: 10px;
+        max-width: fit-content;
+        cursor: pointer;
+        .btn {
+          font-family: "Snippet", sans-serif;
+          font-size: 1.3rem;
+          color: #ffffff;
+          text-decoration: none;
+          text-transform: uppercase;
+          margin-top: -1px;
+          font-weight: 300;
+          z-index: 5;
+          text-align: center;
+          white-space: nowrap;
+        }
       }
     }
-    .btn_parent:hover {
-      border: 2px solid #ffffff;
-      position: relative;
-      top: 2px;
-    }
-    .btn:hover {
-      margin-top: -2px;
-    }
+  }
+  .btn_parent:hover {
+    border: 2px solid #ffffff;
+  }
+  .btn:hover {
+    margin-top: -2px;
   }
 }
 @media screen and (max-width: 758px) {

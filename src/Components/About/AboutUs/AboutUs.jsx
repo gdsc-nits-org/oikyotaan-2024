@@ -50,7 +50,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className={styles.bottom}>
+      <div className={styles.bottom} id="about">
         <div className={styles.left}>
           <img
             className={styles.flower}
@@ -88,15 +88,17 @@ const AboutUs = () => {
             Bibendum at varius vel pharetra vel turpis nunc eget lorem. Fringilla ut morbi
             tincidunt augue interdum.
           </div>
-          <div className={styles.btn_parent}>
-            <a
-              className={styles.btn}
-              href="https://drive.google.com/file/d/1RCbD5e0eBdbnjLnm-_L8tV4O1S0XBAXl/view?usp=drivesdk"
-              target="_blank"
-              rel="noreferrer"
-            >
-              BROCHURE
-            </a>
+          <div className={styles.parent}>
+            <div className={styles.btn_parent}>
+              <a
+                className={styles.btn}
+                href="https://drive.google.com/file/d/1RCbD5e0eBdbnjLnm-_L8tV4O1S0XBAXl/view?usp=drivesdk"
+                target="_blank"
+                rel="noreferrer"
+              >
+                BROCHURE
+              </a>
+            </div>
           </div>
         </div>
       </div>

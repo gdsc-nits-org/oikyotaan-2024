@@ -6,7 +6,7 @@ import rdrum from "../../../Lottiefiles/drum right.json";
 const AboutNits = () => {
   return (
     <div className={styles.main}>
-      <div className={styles.top} id="about">
+      <div className={styles.top}>
         <div className={styles.inner}>
           <div className={styles.ldrum}>
             <Lottie animationData={rdrum} />
