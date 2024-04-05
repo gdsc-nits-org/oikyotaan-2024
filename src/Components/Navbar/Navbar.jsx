@@ -25,14 +25,14 @@ const Navbar = () => {
     }, 200);
   };
 
-  useEffect(() =>{
-    const handler = (e) =>{
-      if(!menuRef.current.contains(e.target)){
-        setNav(false)
+  useEffect(() => {
+    const handler = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setNav(false);
       }
     };
-    document.addEventListener('mousedown',handler)
-  })
+    document.addEventListener("mousedown", handler);
+  });
 
   return (
     <div className={styles.navCont}>
@@ -51,7 +51,7 @@ const Navbar = () => {
           <img src={logo} className={styles.navIcons} alt="logo loading..." />
         </Link>
       </div>
-      <div className={styles.mobile} >
+      <div className={styles.mobile}>
         <div
           className={styles.mobileActive}
           ref={menuRef}

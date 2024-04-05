@@ -1,5 +1,5 @@
 import styles from "./Home.module.scss";
-import { AboutUs , AboutNits } from "../../Components";
+import { AboutUs, AboutNits } from "../../Components";
 
 const Home = () => {
   return (

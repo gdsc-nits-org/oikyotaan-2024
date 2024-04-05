@@ -23,12 +23,12 @@ const AboutUs = () => {
         </div>
       </div>
       <div className={styles.arrow_logo}>
-        <Link to ="about" smooth>
-        <img
-          className={styles.arrow}
-          src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712294971/Oikyotaan/Arrows_down_animated_qj98kq.gif"
-          alt="arrow"
-        />
+        <Link to="about" smooth>
+          <img
+            className={styles.arrow}
+            src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712294971/Oikyotaan/Arrows_down_animated_qj98kq.gif"
+            alt="arrow"
+          />
         </Link>
       </div>
       <div className={styles.top}>
@@ -89,7 +89,12 @@ const AboutUs = () => {
             tincidunt augue interdum.
           </div>
           <div className={styles.btn_parent}>
-            <a className={styles.btn} href="https://drive.google.com/file/d/1RCbD5e0eBdbnjLnm-_L8tV4O1S0XBAXl/view?usp=drivesdk" target="_blank" rel="noreferrer">
+            <a
+              className={styles.btn}
+              href="https://drive.google.com/file/d/1RCbD5e0eBdbnjLnm-_L8tV4O1S0XBAXl/view?usp=drivesdk"
+              target="_blank"
+              rel="noreferrer"
+            >
               BROCHURE
             </a>
           </div>
