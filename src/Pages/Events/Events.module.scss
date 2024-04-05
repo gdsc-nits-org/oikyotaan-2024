@@ -4,9 +4,10 @@
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  margin-top: 3rem;
+  // background: linear-gradient(to bottom, #3d029d 0%, #3f1560 100%);
 }
 .TextParent {
-  font-family: Snippet;
   font-weight: 400;
   color: azure;
   font-size: 4rem;
@@ -23,17 +24,10 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #403571;
-  background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1712137199/pngwing_3_slripp.webp);
+  // background: linear-gradient(to bottom, #3d029d 0%, #3f1560 100%);
+  // background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1712137199/pngwing_3_slripp.webp);
 }
-.Leftdrumclass {
-  height: 9rem;
-  width: 9rem;
-}
-.Rightdrumclass {
-  height: 9rem;
-  width: 9rem;
-}
+
 .Lftdrum {
   transform: scaleX(-1);
 }
@@ -61,8 +55,10 @@
   margin-left: 9vw;
   margin-right: 9vw;
   border: 0.1vw solid #ffffff;
-  background-color: #433672;
-  border-radius: 2rem;
+  background-color: #403370;
+  border-radius: 2.5rem;
+  backdrop-filter: blur(20px);
+  margin-bottom: 4rem;
 }
 
 .EventImg {
@@ -74,6 +70,7 @@
   font-family: Montserrat;
   padding: 5% 10% 5% 10%;
   color: aliceblue;
+  font-family: var(--font-1);
 }
 .SliderDiv {
   display: flex;
@@ -83,10 +80,24 @@
   color: antiquewhite;
   text-align: center;
   font-weight: 200;
+  font-family: var(--font-1);
+}
+.Text {
+  font-family: var(--font-1);
 }
 button {
   background-color: #433672;
   border: transparent;
+}
+
+.musical {
+  margin-left: -1rem;
+  width: 14rem;
+}
+.musical1 {
+  margin-left: -1rem;
+  width: 14rem;
+  transform: scaleX(-1);
 }
 
 .DholEvent {

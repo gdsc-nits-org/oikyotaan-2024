@@ -2,6 +2,9 @@ import React from "react";
 import Lottie from "lottie-react";
 import style from "./Events.module.scss";
 import rightdrum from "../../../public/lottieassets/drumright.json";
+import flutel from "../../../public/artist_assets/flute_left.svg";
+import fluter from "../../../public/artist_assets/flute_right.svg";
+
 // import data from "./Events.json";
 
 const EventsArr = [
@@ -47,9 +50,11 @@ const Events = () => {
     <div>
       <div className={style.ParentDiv}>
         <div className={style.TopDiv}>
+          <img alt="LeftPepa" src={flutel} />
           <img
-            alt="LeftPepa"
-            src="https://res.cloudinary.com/dl0knguhb/image/upload/v1712000480/Oikyotaan/Left_Pepa_byg1ot.webp"
+            className={style.musical}
+            alt="tmg"
+            src="https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/lvw9ahmbohpwrdsupob8"
           />
           <div className={style.DholEvent}>
             <div className={style.Leftdrumclass}>
@@ -78,18 +83,17 @@ const Events = () => {
             </div>
           </div>
           <img
-            alt="RightPepa"
-            src="https://res.cloudinary.com/dl0knguhb/image/upload/v1712000481/Oikyotaan/Right_Pepa_oxgvkk.webp"
+            className={style.musical1}
+            alt="tmg"
+            src="https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/lvw9ahmbohpwrdsupob8"
           />
+          <img alt="RightPepa" src={fluter} />
         </div>
         <div className={style.bottomParent}>
           <div className={style.BottomDiv}>
             <div className={style.SliderDiv}>
               <button onClick={NextSlider} type="button" aria-label="left">
-                <img
-                  alt=""
-                  src="https://res.cloudinary.com/dl0knguhb/image/upload/v1712134689/iconamoon_arrow-left-2_o8dsbr.webp"
-                />
+                <img alt="" src="" />
               </button>
               <div className={style.EventImg}>
                 <img alt={EventsArr[index].id} src={EventsArr[index].src} />
