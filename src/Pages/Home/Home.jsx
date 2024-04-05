@@ -1,10 +1,12 @@
-import { Team } from "../Team/Team";
+import styles from "./Home.module.scss";
+import { AboutUs, AboutNits } from "../../Components";
 
 const Home = () => {
   return (
-    <main>
-      <Team/>
-    </main>
+    <div className={styles.home}>
+      <AboutUs />
+      <AboutNits />
+    </div>
   );
 };
 
