@@ -4,7 +4,7 @@ import styles from "./Navbar.module.scss";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  let menuRef = useRef();
+  const menuRef = useRef();
   const hamburger = {
     inactive:
       "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712134338/Oikyotaan/inactive_rojxbk.svg",
@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   useEffect(() =>{
-    let handler = (e) =>{
+    const handler = (e) =>{
       if(!menuRef.current.contains(e.target)){
         setNav(false)
       }

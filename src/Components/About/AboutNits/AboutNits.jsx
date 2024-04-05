@@ -1,5 +1,5 @@
-import styles from "./AboutNits.module.scss";
 import Lottie from "lottie-react";
+import styles from "./AboutNits.module.scss";
 import rdrum from "../../../Lottiefiles/drum right.json";
 import owllottie from "../../../Lottiefiles/poster.json";
 
