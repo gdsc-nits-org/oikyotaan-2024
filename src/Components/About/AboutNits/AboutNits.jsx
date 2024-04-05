@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
 import styles from "./AboutNits.module.scss";
 import rdrum from "../../../Lottiefiles/drum right.json";
-import owllottie from "../../../Lottiefiles/poster.json";
+// import owllottie from "../../../Lottiefiles/poster.json";
 
 const AboutNits = () => {
   return (
@@ -46,7 +46,7 @@ const AboutNits = () => {
         </div>
         <div className={styles.right}>
           <div className={styles.owl}>
-            <Lottie animationData={owllottie} />
+            <Lottie animationData={rdrum} />
           </div>
         </div>
       </div>
