@@ -178,3 +178,65 @@
     }
   }
 }
+@media screen and (max-width: 758px) {
+  .top {
+    .header {
+      .logo {
+        width: 10rem;
+        height: 3rem;
+      }
+    }
+    .ldrum,
+    .rdrum {
+      height: 5rem;
+      width: 5rem;
+    }
+    .heading {
+      font-size: 1.3rem;
+    }
+  }
+  .bottom {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0rem;
+    position: relative;
+    bottom: 5rem;
+
+    .left,
+    .right {
+      width: 80%;
+    }
+    .right {
+      .paragraph {
+        font-size: 1rem;
+      }
+    }
+    .left {
+      .flower {
+        top: 8rem;
+      }
+      .couple {
+        bottom: 5rem;
+        .husband,
+        .wife {
+          height: 20rem;
+          width: 10rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .bottom {
+    .left {
+      .flower {
+        left: 1rem;
+      }
+    }
+    .right {
+      .paragraph {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

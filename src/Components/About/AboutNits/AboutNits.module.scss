@@ -95,3 +95,51 @@
     }
   }
 }
+@media screen and (max-width: 758px) {
+  .top {
+    .header {
+      .logo {
+        width: 10rem;
+        height: 3rem;
+      }
+    }
+    .ldrum,
+    .rdrum {
+      height: 5rem;
+      width: 5rem;
+    }
+    .heading {
+      font-size: 1.3rem;
+    }
+  }
+  .bottom {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    .left,
+    .right {
+      width: 80%;
+    }
+    .left {
+      .paragraph {
+        font-size: 1rem;
+      }
+    }
+    .right {
+      .owl {
+        height: 70%;
+        width: 60%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .bottom {
+    .left {
+      .paragraph {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
