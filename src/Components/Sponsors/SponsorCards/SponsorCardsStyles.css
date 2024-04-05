@@ -17,8 +17,9 @@
   border: 0.25rem solid transparent;
   border-image: linear-gradient(white, rgb(241, 123, 143)) 1;
   border-radius: 0.625rem;
-  -webkit-mask-image: radial-gradient(transparent 0 0px, #000 0px);
-          mask-image: radial-gradient(transparent 0 0px, #000 0px);
+  
+  -webkit-mask-image: radial-gradient(transparent 0 0px, #000000 0px);
+          mask-image: radial-gradient(transparent 0 0px, #000000 0px);
   transition: border-image 0.5s;
   overflow: hidden;
 }
