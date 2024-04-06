@@ -104,6 +104,10 @@
     align-items: center;
   }
 }
+.gdsctext {
+  color: #ffffff;
+  text-align: center;
+}
 .gdsclogo {
   position: relative;
 
@@ -245,9 +249,8 @@
   }
 
   .gdsctext {
-    font-size: 0.7rem;
+    font-size: 1rem;
     position: relative;
-    left: 1.5rem;
   }
   .contactdetails {
     font-size: 0.5rem;
@@ -259,6 +262,9 @@
 }
 
 @media (max-width: 500px) {
+  .gdsctext {
+    font-size: 0.7rem;
+  }
   .contactdetails {
     font-size: 0.7rem;
   }
@@ -273,9 +279,6 @@
       height: 7rem;
       width: 12rem;
     }
-  }
-  .center {
-    left: -1rem;
   }
   .imgtop {
     height: 7rem;
