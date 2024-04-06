@@ -29,6 +29,14 @@
     width: 14.625rem;
     height: 18.875rem;
   }
+  @media screen and (max-width: 410px) {
+    width: 12.625rem;
+    height: 16.875rem;
+  }
+  @media screen and (max-width: 320px) {
+    width: 11.625rem;
+    height: 14.875rem;
+  }
 
   .imageFrame {
     background-image: url("https://res.cloudinary.com/draptrzrc/image/upload/v1712264292/GDSC%20Members/wiolcika0orabrxaw4za.svg");
