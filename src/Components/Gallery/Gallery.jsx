@@ -10,15 +10,13 @@ import 'swiper/css/pagination';
 import './styles.css';
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 
 let img1 = "https://res.cloudinary.com/dyn3q57b8/image/upload/f_auto,q_auto,fl_lossy/v1/Oikyotaan%20'24%20assets/Gallery/image1"
 let img2 = "https://res.cloudinary.com/dyn3q57b8/image/upload/f_auto,q_auto,fl_lossy/v1/Oikyotaan%20'24%20assets/Gallery/image2"
 let img3 = "https://res.cloudinary.com/dyn3q57b8/image/upload/f_auto,q_auto,fl_lossy/v1/Oikyotaan%20'24%20assets/Gallery/image3"
 import GalleryHeader from './GalleryHeader/GalleryHeader';
 
-import Lottie from "lottie-react";
-import Dhol from "../../assets/AnimationData/drum_right.json";
 
 
 
@@ -42,8 +40,14 @@ const Gallery = ()=> {
           modifier: 1,
           slideShadows: false,
         }}
+
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination, Autoplay]}
         className="mySwiper"
       >
       <SwiperSlide><img src={img1} alt='Carousel photos'></img></SwiperSlide>
