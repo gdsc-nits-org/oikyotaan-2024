@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import { Home, Error, Artist , Team } from "./Pages";
+import { Home, Error, Artist, Team } from "./Pages";
 
 import { Navbar, Footer } from "./Components";
 
