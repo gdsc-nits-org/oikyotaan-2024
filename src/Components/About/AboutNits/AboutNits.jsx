@@ -1,7 +1,6 @@
 import Lottie from "lottie-react";
 import styles from "./AboutNits.module.scss";
 import rdrum from "../../../Lottiefiles/drum right.json";
-// import owllottie from "../../../Lottiefiles/poster.json";
 
 const AboutNits = () => {
   return (
@@ -40,7 +39,7 @@ const AboutNits = () => {
           <div className={styles.owl1}>
             <img
               className={styles.owl}
-              src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712350196/Oikyotaan/owl_qedieo.gif"
+              src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712401918/Oikyotaan/ezgif-7-03a11e7e5d-unscreen_2_liesom.gif"
               alt="owl"
             />
           </div>
