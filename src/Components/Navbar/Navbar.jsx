@@ -111,7 +111,7 @@ const Navbar = () => {
             />
           </div>
           <div className={styles.linkParentMobile}>
-            <Link to="/teams" className={styles.link} onClick={() => setNav(!nav)}>
+            <Link to="/team" className={styles.link} onClick={() => setNav(!nav)}>
               Team
             </Link>
             <img
@@ -157,7 +157,7 @@ const Navbar = () => {
 
           <div className={styles.linkParent}>
             <div className={styles.innerParent}>
-              <Link to="/teams" className={styles.link}>
+              <Link to="/team" className={styles.link}>
                 Team
               </Link>
             </div>
