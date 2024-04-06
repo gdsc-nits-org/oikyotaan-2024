@@ -7,12 +7,9 @@
   align-items: center;
   overflow: hidden;
   background: linear-gradient(to bottom, #3d029d 0%, #3f1560 100%);
-  padding: 7% 5%;
+  padding: 10% 5%;
 
   .bg_img {
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center;
     width: 100%;
     height: 190vh;
     position: fixed;
@@ -23,6 +20,11 @@
   .header {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 50px;
+    }
     .title {
       display: flex;
       justify-content: center;
@@ -39,7 +41,14 @@
 
       .groupTitle {
         .heading {
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          color: white;
+          text-align: center;
+          font-family: var(--font-1);
           font-size: 6.5vmin;
+          text-wrap: nowrap;
         }
         .gloory {
           margin-top: -8%;
@@ -72,8 +81,22 @@
 
       width: 100%;
 
-      .coreTeam {
+      h3{
+        color: #fff;
+
+        text-align: center;
+        font-family: var(--font-1);
+        font-size: 2.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-top: 3%;
+      }
+
+      .team {
         width: 100%;
+        margin-top: 3%;
 
         display: flex;
         flex-wrap: wrap;
@@ -81,15 +104,7 @@
         align-items: center;
         gap: 10vw;
       }
-      .techTeam {
-        width: 100%;
 
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 10vw;
-      }
     }
   }
 }

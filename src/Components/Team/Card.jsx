@@ -13,16 +13,18 @@ export const Card = ({ member }) => {
       <img className={styles.profileImage} src={member.profile} alt={member.name} />
 
       <div className={styles.details}>
-        <h3>{member.name}</h3>
-        <h4>{member.designation}</h4>
+        <div className={styles.name}>{member.name}</div>
+        <div className={styles.desg}>{member.designation}</div>
 
         <div className={styles.socialProfile}>
+          {/* eslint-disable-next-line */}
           <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-            <FaLinkedin />
+            <FaLinkedin color="#fff"/>
           </a>
 
+          {/* eslint-disable-next-line */}
           <a href={member.github} target="_blank" rel="noopener noreferrer">
-            <FaGithub />
+            <FaGithub color="#fff"/>
           </a>
         </div>
       </div>

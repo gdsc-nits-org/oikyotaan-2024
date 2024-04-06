@@ -9,7 +9,6 @@
   z-index: 99;
   transition: all 0.5s ease-in-out;
   filter: none;
-  
 
   &:hover {
     .details {
@@ -31,7 +30,6 @@
     height: 18.875rem;
   }
 
-
   .imageFrame {
     background-image: url("https://res.cloudinary.com/draptrzrc/image/upload/v1712264292/GDSC%20Members/wiolcika0orabrxaw4za.svg");
     background-size: cover;
@@ -49,14 +47,46 @@
 
   .details {
     position: absolute;
-    bottom: 25%;
+    bottom: 20%;
     left: 0;
     width: 100%;
     text-align: center;
-    z-index: -9;
+    z-index: 1;
     transition: all 0.5s ease-in-out;
 
+    @media screen and (max-width: 768px) {
+      bottom: 15%;
+    }
+
+    .name{
+      color: #fff;
+
+      text-align: center;
+      font-family: var(--font-1);
+      font-size: 1.875rem;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+    }
+
+    .desg{
+      color: #fff;
+
+      text-align: center;
+      font-family: var(--font-1);
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
     .socialProfile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3%;
+      font-size: 1.75rem;
+      transition: all 0.5s ease-in-out;
       opacity: 0;
     }
   }

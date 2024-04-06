@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Lottie from "lottie-react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import { Autoplay, EffectCoverflow } from "swiper/core";
 import styles from "./team.module.scss";
 import data from "../../../public/db/team.json";
 import { Card } from "../../Components/Team/Card";
@@ -8,10 +10,7 @@ import drumLeft from "./drum right.json";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-
-import { Autoplay, EffectCoverflow } from "swiper/modules";
-
-export const Team = () => {
+const Team = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
@@ -19,14 +18,57 @@ export const Team = () => {
       setIsSmallScreen(window.innerWidth < 768);
     };
 
-    // Add event listener to handle screen resizing
     window.addEventListener("resize", handleResize);
 
-    // Remove event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const renderTeamMembers = (members) => {
+    return members.map((member) => <Card member={member} key={member.id} />);
+  };
+
+  const renderSwiper = (members) => {
+    return (
+      <Swiper
+        className={styles.team}
+        modules={[Autoplay, EffectCoverflow]}
+        centeredSlides
+        initialSlide={Math.floor(members.length / 2)}
+        slidesPerView={4}
+        spaceBetween={-40}
+        speed={500}
+        loop
+        effect="coverflow"
+        grabCursor
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 200,
+          modifier: 2.5,
+          slideShadows: false,
+        }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        breakpoints={{
+          0: { slidesPerView: 2, spaceBetween: -60 },
+          380: { slidesPerView: 2 },
+          555: { slidesPerView: 4 },
+          789: { slidesPerView: 4 },
+          1000: { slidesPerView: 4 },
+        }}
+      >
+        {members.map((member) => (
+          <SwiperSlide key={member.id}>
+            <Card member={member} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    );
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -43,7 +85,10 @@ export const Team = () => {
           <div className={styles.groupTitle}>
             <h1 className={styles.heading}>MEET OUR TEAM</h1>
             <div className={styles.gloory}>
-              <img src="https://res.cloudinary.com/draptrzrc/image/upload/v1712255354/oikotan/feqzgedgxp2yhsibs9fq.webp"></img>
+              <img
+                src="https://res.cloudinary.com/draptrzrc/image/upload/v1712255354/oikotan/feqzgedgxp2yhsibs9fq.webp"
+                alt="Team"
+              />
             </div>
           </div>
           <div className={`${styles.dholRight} ${styles.dhol}`}>
@@ -53,132 +98,24 @@ export const Team = () => {
       </div>
 
       <div className={styles.teamDetailedContainer}>
-        {/* core */}
         <div className={styles.teamContainer}>
           <h3>CORE TEAM</h3>
           {!isSmallScreen && (
-            <div className={styles.coreTeam}>
-              {data.core.members.map((member, index) => (
-                <Card member={member} key={index} />
-              ))}
-            </div>
+            <div className={styles.team}>{renderTeamMembers(data.core.members)}</div>
           )}
-
-          {/* swiper */}
-          {isSmallScreen && (
-            <Swiper
-              className={styles.coreTeam}
-              modules={[Autoplay, EffectCoverflow]}
-              centeredSlides
-              initialSlide={Math.floor(data.core.members.length / 2)}
-              slidesPerView={4}
-              spaceBetween={-40}
-              speed={500}
-              loop
-              effect="coverflow"
-              grabCursor
-              coverflowEffect={{
-                rotate: 0,
-                stretch: 0,
-                depth: 200,
-                modifier: 2.5,
-                slideShadows: false,
-              }}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
-              breakpoints={{
-                0: {
-                  slidesPerView: 2,
-                  spaceBetween: -60,
-                },
-                380: {
-                  slidesPerView: 2,
-                },
-                555: {
-                  slidesPerView: 4,
-                },
-                789: {
-                  slidesPerView: 4,
-                },
-                1000: {
-                  slidesPerView: 4,
-                },
-              }}
-            >
-              {data.core.members.map((member, index) => (
-                <SwiperSlide key={index}>
-                  <Card member={member} key={index} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          )}
+          {isSmallScreen && renderSwiper(data.core.members)}
         </div>
 
-        {/* tech */}
         <div className={styles.teamContainer}>
           <h3>TECH TEAM</h3>
           {!isSmallScreen && (
-            <div className={styles.techTeam}>
-              {data.tech.members.map((member, index) => (
-                <Card member={member} key={index} />
-              ))}
-            </div>
+            <div className={styles.team}>{renderTeamMembers(data.tech.members)}</div>
           )}
-
-          {/* swiper */}
-          {isSmallScreen && (
-            <Swiper
-              className={styles.techTeam}
-              modules={[Autoplay, EffectCoverflow]}
-              centeredSlides
-              initialSlide={Math.floor(data.core.members.length / 2)}
-              slidesPerView={4}
-              spaceBetween={-40}
-              speed={500}
-              loop
-              effect="coverflow"
-              grabCursor
-              coverflowEffect={{
-                rotate: 0,
-                stretch: 0,
-                depth: 200,
-                modifier: 2.5,
-                slideShadows: false,
-              }}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
-              breakpoints={{
-                0: {
-                  slidesPerView: 2,
-                  spaceBetween: -60,
-                },
-                380: {
-                  slidesPerView: 2,
-                },
-                555: {
-                  slidesPerView: 4,
-                },
-                789: {
-                  slidesPerView: 4,
-                },
-                1000: {
-                  slidesPerView: 4,
-                },
-              }}
-            >
-              {data.core.members.map((member, index) => (
-                <SwiperSlide key={index}>
-                  <Card member={member} key={index} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          )}
+          {isSmallScreen && renderSwiper(data.tech.members)}
         </div>
       </div>
     </div>
   );
 };
+
+export default Team;
