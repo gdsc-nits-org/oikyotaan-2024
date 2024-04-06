@@ -1,0 +1,113 @@
+.wrapper {
+  width: 18.75rem;
+  height: 25rem;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  transition: all 0.5s ease-in-out;
+  filter: none;
+
+  &:hover {
+    .details {
+      transform: translate(0, -35%);
+
+      .socialProfile {
+        opacity: 1;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    width: 15.625rem;
+    height: 20rem;
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 14.625rem;
+    height: 18.875rem;
+  }
+  @media screen and (max-width: 410px) {
+    width: 12.625rem;
+    height: 16.875rem;
+  }
+  @media screen and (max-width: 320px) {
+    width: 11.625rem;
+    height: 14.875rem;
+  }
+
+  .imageFrame {
+    background-image: url("https://res.cloudinary.com/draptrzrc/image/upload/v1712264292/GDSC%20Members/wiolcika0orabrxaw4za.svg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .profileImage {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    z-index: -99;
+  }
+
+  .details {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+
+    .name {
+      color: #fff;
+
+      text-align: center;
+      font-family: var(--font-1);
+      font-size: 1.875rem;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+
+      @media screen and (max-width: 1300px) {
+        font-size: 1.375rem;
+      }
+    }
+
+    .desg {
+      color: #fff;
+
+      text-align: center;
+      font-family: var(--font-1);
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      @media screen and (max-width: 1300px) {
+        font-size: 1.05rem;
+      }
+    }
+
+    .socialProfile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3%;
+      font-size: 1.75rem;
+      transition: all 0.5s ease-in-out;
+      opacity: 0;
+
+      @media screen and (max-width: 1300px) {
+        font-size: 1.15rem;
+      }
+    }
+  }
+}
+
+.inActive {
+  filter: blur(2px);
+}

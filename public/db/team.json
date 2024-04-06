@@ -1,0 +1,196 @@
+{
+  "core": {
+    "name": "Core",
+    "members": [
+      {
+        "id": 1,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 2,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 3,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 4,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 5,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 6,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 13,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 14,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 15,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 17,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 18,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      }
+    ]
+  },
+  "tech": {
+    "name": "Tech",
+    "members": [
+      {
+        "id": 7,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 8,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 9,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 10,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 11,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 12,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 19,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 20,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 21,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 22,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 23,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      },
+      {
+        "id": 24,
+        "name": "Dhiraj Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712263118/oikotan/o5wgsfcryoqvi3qp1jjv.png",
+        "github": "https://github.com/dheeraj1922d",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-das-9a8b0b197/",
+        "designation": "Developer"
+      }
+    ]
+  }
+}
