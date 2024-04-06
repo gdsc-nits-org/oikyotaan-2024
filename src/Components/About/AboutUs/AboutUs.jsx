@@ -51,7 +51,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className={styles.bottom}>
+      <div className={styles.bottom}id="about">
         <div className={styles.left}>
           <img
             className={styles.flower}
