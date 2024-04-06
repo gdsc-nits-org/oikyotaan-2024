@@ -128,8 +128,8 @@
     }
     .right {
       .owl {
-        height: 70%;
-        width: 60%;
+        height: 5%;
+        width: 20%;
       }
     }
   }
@@ -139,6 +139,41 @@
     .left {
       .paragraph {
         font-size: 0.8rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1900px) {
+  .top {
+    .heading {
+      font-size: 2.3rem;
+    }
+    .header {
+      width: 40%;
+      .logo {
+        height: 4rem;
+        width: 18rem;
+      }
+    }
+    .ldrum,
+    .rdrum {
+      height: 8rem;
+      width: 8rem;
+    }
+  }
+  .bottom {
+    .left {
+      .paragraph {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 3000px) {
+  .bottom {
+    .left {
+      .paragraph {
+        font-size: 1.9rem;
       }
     }
   }

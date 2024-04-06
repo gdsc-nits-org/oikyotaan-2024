@@ -61,12 +61,12 @@ const AboutUs = () => {
           <div className={styles.couple}>
             <img
               className={styles.wife}
-              src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712254032/Oikyotaan/wife_bqgccc.svg"
+              src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712254032/Oikyotaan/wife_bqgccc.webp"
               alt="wife"
             />
             <img
               className={styles.husband}
-              src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712254032/Oikyotaan/husband_po3bu7.svg"
+              src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712254032/Oikyotaan/husband_po3bu7.webp"
               alt="husband"
             />
           </div>
@@ -78,15 +78,7 @@ const AboutUs = () => {
             sed id. Lobortis elementum nibh tellus molestie nunc. Ac feugiat sed lectus
             vestibulum mattis ullamcorper velit. Sed ullamcorper morbi tincidunt ornare
             massa eget egestas. Et molestie ac feugiat sed lectus vestibulum mattis
-            ullamcorper. Eget aliquet nibh praesent tristique magna sit amet purus. Morbi
-            blandit cursus risus at ultrices mi tempus imperdiet nulla. Molestie a iaculis
-            at erat pellentesque adipiscing commodo. Euismod lacinia at quis risus sed
-            vulputate. Tempus imperdiet nulla malesuada pellentesque elit eget gravida
-            cum. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu.
-            Scelerisque fermentum dui faucibus in ornare quam viverra orci. In ornare quam
-            viverra orci sagittis. Porta nibh venenatis cras sed felis eget velit.
-            Bibendum at varius vel pharetra vel turpis nunc eget lorem. Fringilla ut morbi
-            tincidunt augue interdum.
+            ullamcorper. Eget aliquet nibh praesent tristique magna sit amet purus.
           </div>
           <div className={styles.parent}>
             <div className={styles.btn_parent}>

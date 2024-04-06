@@ -41,7 +41,7 @@ const Navbar = () => {
           <button className={styles.btn} onClick={hamClick}>
             <img
               src={nav === false ? hamburger.inactive : hamburger.active}
-              style={{ transition: "ease 0.2s" }}
+              style={{ transition: "ease 0.5s" }}
               className={styles.navIcons}
               alt="hamburger loading..."
             />
@@ -65,7 +65,7 @@ const Navbar = () => {
           <button className={styles.btn} onClick={hamClick}>
             <img
               src={nav === false ? hamburger.inactive : hamburger.active}
-              style={{ transition: "ease 0.2s" }}
+              style={{ transition: "ease 0.5s" }}
               className={styles.navIcons1}
               alt="hamburger loading..."
             />
