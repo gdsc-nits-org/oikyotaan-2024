@@ -41,7 +41,7 @@ const Navbar = () => {
           <button className={styles.btn} onClick={hamClick}>
             <img
               src={nav === false ? hamburger.inactive : hamburger.active}
-              style={{ transition: "ease 0.2s" }}
+              style={{ transition: "ease 0.5s" }}
               className={styles.navIcons}
               alt="hamburger loading..."
             />
@@ -65,7 +65,7 @@ const Navbar = () => {
           <button className={styles.btn} onClick={hamClick}>
             <img
               src={nav === false ? hamburger.inactive : hamburger.active}
-              style={{ transition: "ease 0.2s" }}
+              style={{ transition: "ease 0.5s" }}
               className={styles.navIcons1}
               alt="hamburger loading..."
             />
@@ -111,7 +111,7 @@ const Navbar = () => {
             />
           </div>
           <div className={styles.linkParentMobile}>
-            <Link to="/teams" className={styles.link} onClick={() => setNav(!nav)}>
+            <Link to="/team" className={styles.link} onClick={() => setNav(!nav)}>
               Team
             </Link>
             <img
@@ -157,7 +157,7 @@ const Navbar = () => {
 
           <div className={styles.linkParent}>
             <div className={styles.innerParent}>
-              <Link to="/teams" className={styles.link}>
+              <Link to="/team" className={styles.link}>
                 Team
               </Link>
             </div>

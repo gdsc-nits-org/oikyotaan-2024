@@ -13,10 +13,13 @@
   background-color: transparent;
   overflow: hidden;
   white-space: nowrap;
-  margin-top: 3rem;
+  margin-top: 4rem;
   .slide {
     display: inline-block;
     animation: 15s slide infinite linear;
+    .slider {
+      width: 100vw;
+    }
   }
 }
 @keyframes slide {
@@ -32,7 +35,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  scroll-behavior: smooth;
   cursor: pointer;
+  height: fit-content;
   .arrow {
     height: 4rem;
     width: 5rem;
@@ -121,8 +126,8 @@
 
       .husband,
       .wife {
-        height: 22rem;
-        width: 15rem;
+        height: 20rem;
+        width: 12rem;
       }
     }
   }
@@ -151,7 +156,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        z-index: 3;
+        z-index: 1;
         background-color: #fd5282;
         padding: 12px 15px;
         border-radius: 10px;
@@ -165,7 +170,7 @@
           text-transform: uppercase;
           margin-top: -1px;
           font-weight: 300;
-          z-index: 5;
+          z-index: 2;
           text-align: center;
           white-space: nowrap;
         }
@@ -180,6 +185,9 @@
   }
 }
 @media screen and (max-width: 758px) {
+  .arrow_logo {
+    display: none;
+  }
   .top {
     .header {
       .logo {
@@ -220,8 +228,8 @@
         bottom: 5rem;
         .husband,
         .wife {
-          height: 20rem;
-          width: 10rem;
+          height: 100%;
+          width: 8rem;
         }
       }
     }
@@ -239,5 +247,71 @@
         font-size: 0.8rem;
       }
     }
+  }
+}
+@media screen and (min-width: 1900px) {
+  .top {
+    .heading {
+      font-size: 2.3rem;
+    }
+    .header {
+      width: 40%;
+      .logo {
+        height: 4rem;
+        width: 18rem;
+      }
+    }
+    .ldrum,
+    .rdrum {
+      height: 8rem;
+      width: 8rem;
+    }
+  }
+  .bottom {
+    .left {
+      .flower {
+        left: 14rem;
+      }
+      .couple {
+        .husband,
+        .wife {
+          height: 23rem;
+          width: 15rem;
+        }
+      }
+    }
+    .right {
+      .paragraph {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 3000px) {
+  .bottom {
+    .left {
+      .flower {
+        left: 22rem;
+      }
+    }
+    .right {
+      .paragraph {
+        font-size: 1.9rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 3000px) {
+  .bottom {
+    .left {
+      .flower {
+        left: 25rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 758px) {
+  .slide_parent {
+    margin-top: 3.5rem;
   }
 }
