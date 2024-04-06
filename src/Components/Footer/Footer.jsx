@@ -32,7 +32,7 @@ const Footer = () => {
                 <img
                   className={styles.logo}
                   alt="Oikyotaan Logo"
-                  src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712052815/Oikyotaan/ascrgnkddoyvanfs3ohr.svg"
+                  src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712419014/Oikyotaan/OIK_LOGO_COLOR_DROP_eavdpq.webp"
                 />
               </div>
               <div className={styles.social}>

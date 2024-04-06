@@ -22,15 +22,16 @@ const AboutUs = () => {
           />
         </div>
       </div>
-      <div className={styles.arrow_logo}>
-        <Link to="about" smooth>
+      <Link to="about" smooth>
+        <div className={styles.arrow_logo}>
           <img
             className={styles.arrow}
             src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712294971/Oikyotaan/Arrows_down_animated_qj98kq.gif"
             alt="arrow"
           />
-        </Link>
-      </div>
+        </div>
+      </Link>
+
       <div className={styles.top}>
         <div className={styles.inner}>
           <div className={styles.ldrum}>
@@ -50,7 +51,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className={styles.bottom} id="about">
+      <div className={styles.bottom}>
         <div className={styles.left}>
           <img
             className={styles.flower}

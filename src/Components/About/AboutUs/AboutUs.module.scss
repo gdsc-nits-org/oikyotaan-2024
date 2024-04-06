@@ -35,7 +35,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  scroll-behavior: smooth;
   cursor: pointer;
+  height: fit-content;
   .arrow {
     height: 4rem;
     width: 5rem;
@@ -183,6 +185,9 @@
   }
 }
 @media screen and (max-width: 758px) {
+  .arrow_logo {
+    display: none;
+  }
   .top {
     .header {
       .logo {
@@ -303,5 +308,10 @@
         left: 25rem;
       }
     }
+  }
+}
+@media screen and (max-width: 758px) {
+  .slide_parent {
+    margin-top: 3.5rem;
   }
 }
