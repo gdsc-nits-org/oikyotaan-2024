@@ -30,6 +30,7 @@ const Gallery = ()=> {
 
       <Swiper
         effect={'coverflow'}
+        loop={true}
         grabCursor={true}
         spaceBetween={0}
         centeredSlides={true}
