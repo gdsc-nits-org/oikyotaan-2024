@@ -3,7 +3,6 @@
 .header_container {
     display: flex;
     /* width: 60%; */
-    gap: 1.6rem;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -17,19 +16,18 @@
 
 .title {
     font-family: "Snippet", sans-serif;
-    font-weight: 400;
-    font-size: 2.4rem;
+    font-weight: bolder;
+    font-size: 2rem;
     color: rgba(255, 255, 255, 0.89);
     text-transform: uppercase;
 }
 
 .drum_left, .drum_right {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
 }
 
 .curl {
-    width: 16rem;
+    width: 14rem;
     height: auto;
 }
 
@@ -46,12 +44,12 @@
     }
     
     .drum_left, .drum_right {
-        width: 3.2rem;
-        height: 3.2rem;
+        width: 5rem;
+        height: 5rem;
     }
     
     .curl {
-        width: 12rem;
+        width: 10rem;
         height: auto;
     }
 
