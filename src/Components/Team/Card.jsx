@@ -19,11 +19,21 @@ export const Card = ({ member }) => {
         <div className={styles.desg}>{member.designation}</div>
 
         <div className={styles.socialProfile}>
-          <a href={member.linkedin} aria-label="Click Here" target="_blank" rel="noopener noreferrer">
+          <a
+            href={member.linkedin}
+            aria-label="Click Here"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaLinkedin color="#fff" />
           </a>
 
-          <a href={member.github}  aria-label="Click Here" target="_blank" rel="noopener noreferrer">
+          <a
+            href={member.github}
+            aria-label="Click Here"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub color="#fff" />
           </a>
         </div>
