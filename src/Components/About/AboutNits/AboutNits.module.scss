@@ -115,6 +115,7 @@
   .bottom {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
 
     .left,
@@ -128,8 +129,8 @@
     }
     .right {
       .owl {
-        height: 5%;
-        width: 20%;
+        height: 70%;
+        width: 100%;
       }
     }
   }
