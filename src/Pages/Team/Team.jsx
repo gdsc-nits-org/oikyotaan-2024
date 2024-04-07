@@ -10,6 +10,7 @@ import drumLeft from "./drum right.json";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
+import { Navbar } from "../../Components";
 const Team = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -72,6 +73,7 @@ const Team = () => {
 
   return (
     <div className={styles.wrapper}>
+      <Navbar/>
       <img
         alt="tmg"
         className={styles.bg_img}

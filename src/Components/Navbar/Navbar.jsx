@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.scss";
 
-const Navbar = () => {
+const Navbar = ({isHome = false}) => {
   const [nav, setNav] = useState(false);
-  const [navVissible , setNavVissible ] = useState(false)
+  const [navVissible , setNavVissible ] = useState(!isHome)
   const menuRef = useRef();
   const hamburger = {
     inactive:
@@ -40,7 +40,12 @@ const Navbar = () => {
       if (window.scrollY >= 400) {
         setNavVissible(true);
       } else {
-        setNavVissible(false);
+        if(isHome){
+          setNavVissible(false);
+        }
+        else{
+          setNavVissible(true);
+        }
       }
     };
 
