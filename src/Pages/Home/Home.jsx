@@ -1,9 +1,10 @@
 import styles from "./Home.module.scss";
 import {Gallery, Sponsors, AboutUs, AboutNits} from '../../Components'
+import Hero from "../../Components/Hero/Hero";
 const Home = () => {
   return (
     <main className={styles.home}>
-      <h1>Oikyotaan 2024</h1>
+      <Hero/>
       <AboutUs />
       <AboutNits />
       <Sponsors />

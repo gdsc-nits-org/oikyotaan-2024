@@ -4,6 +4,7 @@ import styles from "./Navbar.module.scss";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [navVissible , setNavVissible ] = useState(false)
   const menuRef = useRef();
   const hamburger = {
     inactive:
@@ -34,8 +35,20 @@ const Navbar = () => {
     document.addEventListener("mousedown", handler);
   });
 
+  useEffect(() => {
+    const SetNavbar = () => {
+      if (window.scrollY >= 400) {
+        setNavVissible(true);
+      } else {
+        setNavVissible(false);
+      }
+    };
+
+    document.addEventListener("scroll", SetNavbar);
+  });
+
   return (
-    <div className={styles.navCont}>
+    <div className={styles.navCont} style={{ top : navVissible ? 0 : "-10vh"}}>
       <div className={styles.NavbarMobile}>
         <div className={styles.right}>
           <button className={styles.btn} onClick={hamClick}>

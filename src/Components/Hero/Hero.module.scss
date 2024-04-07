@@ -1,0 +1,120 @@
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(142, 184, 254, 1);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  animation: bg 4s linear reverse;
+
+  @keyframes bg {
+    0%{
+      background-color: rgba(142, 184, 254, 1);
+    }
+    100%{
+      background:#3D0984;
+    }
+  }
+
+  @keyframes foreground {
+    0%{
+      transform: translateY(30%);
+    }
+    100%{
+      transform: translateY(0%);
+    }
+  }
+
+  .ForegroundSvg {
+    width: 100vmax;
+    height: 100%;
+    position: absolute;
+    z-index: 99;
+    animation: foreground 3s ease-in-out;
+    object-fit: cover;
+
+    svg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      @keyframes horse {
+        0%{
+          transform: rotate(10deg);
+        }
+        50%{
+            transform: rotate(-9deg);
+        }
+        100%{
+            transform: rotate(10deg);
+        }
+      }
+      .horse{
+        transform-origin: bottom;
+        animation: horse 2s ease 4s infinite;
+        // background-color: white;
+      }
+      
+    }
+  }
+
+  @keyframes kitti {
+    0%{
+      scale: 1.5;
+    }
+    100%{
+      scale: 1;
+    }
+  }
+
+  .kitti{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    z-index: 0;
+    animation: kitti 3s ease-in-out;
+
+    
+    @media screen and (max-width: 1200px) {
+      transform: translateY(2%);
+    }
+
+    @media screen and (max-width: 640px) {
+      transform: translateY(5%);
+      object-fit: cover;
+    }
+    @media screen and (max-width: 768px) {
+      transform: translateY(3%);
+    }
+  }
+
+  @keyframes logo {
+    0%{
+      scale: 1;
+    }
+    100%{
+      transform: translateY(150%);
+      scale: 2.5;
+    }
+  }
+
+  .logo{
+    width: 60vmin;
+    position: absolute;
+    top: -3%;
+    scale: 1;
+
+    animation: logo 6s ease-in-out reverse;
+
+    @media screen and (max-width: 430px) {
+      transform: translateY(40%);
+    }
+
+  }
+}
