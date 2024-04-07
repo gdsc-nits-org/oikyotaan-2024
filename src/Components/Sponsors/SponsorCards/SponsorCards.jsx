@@ -1,11 +1,11 @@
 import './SponsorCardsStyles.css'
-import Cards from './Cards'
+import Cards from './SponsorCards'
 
 const SponsorCards = () => {
   return (
     <div className='grid_container'>
-      {Cards.map((item,i)=>(
-        <div className="card" key={item.id}>
+      {Cards.map((item)=>(
+        <div className="card">
           <img className='spons_img' src={item} alt="a sponsor" />
         </div>
       ))}
