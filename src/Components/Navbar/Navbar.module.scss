@@ -3,7 +3,7 @@
   position: fixed;
   width: 100vw;
   max-height: fit-content;
-  z-index: 5;
+  z-index: 99999;
   overflow: hidden;
   margin-top: 0;
   padding-top: 0;
@@ -72,6 +72,8 @@
   justify-content: space-around;
   height: 7rem;
   align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   .left {
     height: fit-content;
@@ -84,7 +86,7 @@
       height: 2.8rem;
       width: 15rem;
       position: absolute;
-      bottom: 0.3rem;
+      bottom: 0.8rem;
     }
   }
 
@@ -218,5 +220,41 @@
   .mobileActive {
     height: 80vh;
     width: 40%;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .deskNav {
+    .right {
+      .link {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 2500px) {
+  .deskNav {
+    .right {
+      .link {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 3000px) {
+  .deskNav {
+    .right {
+      .link {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 3000px) {
+  .deskNav {
+    .right {
+      .link {
+        font-size: 2rem;
+      }
+    }
   }
 }

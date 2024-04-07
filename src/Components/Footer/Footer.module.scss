@@ -2,9 +2,10 @@
   width: 100%;
   overflow: hidden;
   max-height: fit-content;
+  position: relative;
 }
 .top {
-  height: 4rem;
+  height: fit-content;
   width: 100%;
   position: relative;
   background-color: transparent;
@@ -13,6 +14,9 @@
   .slide {
     display: inline-block;
     animation: 15s slide infinite linear;
+    .slider {
+      width: 100vw;
+    }
   }
 }
 @keyframes slide {
@@ -23,16 +27,23 @@
     transform: translateX(-100%);
   }
 }
+.cont {
+  display: flex;
+}
 
 .footer {
-  height: 29rem;
+  height: fit-content;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 
   .footerbody {
-    height: 27rem;
+    height: fit-content;
     background-color: #15102f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 .social {
@@ -54,6 +65,8 @@
     .contactinfo {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      justify-content: center;
       gap: 0.5rem;
       .logo2 {
         height: 1.2rem;
@@ -76,10 +89,12 @@
 }
 .center {
   padding: 1rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
   font-size: 1rem;
-  max-width: 100vw;
-  position: relative;
+  width: 100vw;
 
   .gdsctext_pos {
     display: flex;
@@ -88,6 +103,10 @@
     justify-content: center;
     align-items: center;
   }
+}
+.gdsctext {
+  color: #ffffff;
+  text-align: center;
 }
 .gdsclogo {
   position: relative;
@@ -106,17 +125,7 @@
   bottom: 2rem;
   z-index: 1000;
 }
-.gdsctext {
-  color: white;
-  font-family: "Montserrat-Regular", Helvetica;
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 0.1px;
-  line-height: 20px;
-  position: relative;
-  text-align: center;
-  font-size: 0.9rem;
-}
+
 .gdsctext1 {
   font-weight: 400;
   line-height: 2rem;
@@ -160,31 +169,38 @@
   );
 }
 .imgtop {
-  height: 17em;
-  width: 28.5em;
+  height: 17rem;
+  width: 30rem;
   object-fit: cover;
-  position: relative;
-  bottom: 29rem;
+  position: absolute;
   z-index: 1;
 }
-.imgbottom {
-  height: 17em;
-  width: 30em;
-  object-fit: cover;
-  position: relative;
-  bottom: 19rem;
-  left: 34.5%;
-  z-index: 1;
+.png {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  align-items: center;
+  justify-content: flex-end;
+  .imgbottom {
+    height: 17rem;
+    width: 30em;
+    object-fit: cover;
+    position: absolute;
+    bottom: 2rem;
+    transform: rotate(180deg);
+    z-index: 1;
+  }
 }
 .logo_box {
   width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 
   .logo {
-    height: 11rem;
-    width: 20rem;
+    height: 15rem;
+    width: 25rem;
     object-fit: cover;
     z-index: 3;
   }
@@ -213,12 +229,14 @@
 }
 @media screen and (max-width: 750px) {
   .imgtop {
-    height: 13em;
-    width: 21em;
+    height: 10rem;
+    width: 18rem;
   }
-  .imgbottom {
-    height: 13em;
-    width: 20em;
+  .png {
+    .imgbottom {
+      height: 10rem;
+      width: 18rem;
+    }
   }
   .social {
     flex-direction: column-reverse;
@@ -231,9 +249,8 @@
   }
 
   .gdsctext {
-    font-size: 0.7rem;
+    font-size: 1rem;
     position: relative;
-    left: 1.5rem;
   }
   .contactdetails {
     font-size: 0.5rem;
@@ -243,43 +260,119 @@
     bottom: 1rem;
   }
 }
-@media (max-width: 600px) and (min-width: 492px) {
-  .imgbottom {
-    position: relative;
-    bottom: 25rem;
-    left: 46%;
-  }
-}
+
 @media (max-width: 500px) {
+  .gdsctext {
+    font-size: 0.7rem;
+  }
   .contactdetails {
     font-size: 0.7rem;
   }
-  .logo {
-    width: 10em;
-    height: 5rem;
+  .logo_box {
+    .logo {
+      width: 12rem;
+      height: 8rem;
+    }
   }
-  .imgbottom {
-    bottom: 20.5rem;
-    height: 9rem;
-    width: 15rem;
-  }
-  .center {
-    left: -1rem;
+  .png {
+    .imgbottom {
+      height: 7rem;
+      width: 12rem;
+    }
   }
   .imgtop {
-    height: 9rem;
-    width: 15rem;
+    height: 7rem;
+    width: 12rem;
   }
 }
 @media (max-width: 750px) and (min-width: 501px) {
-  .logo {
-    height: 9rem;
-    width: 15rem;
+  .logo_box {
+    .logo {
+      height: 9rem;
+      width: 15rem;
+    }
   }
 }
-@media (max-width: 940px) and (min-width: 751px) {
-  .imgbottom {
-    bottom: 30rem;
-    left: 50%;
+@media screen and (min-width: 3000px) {
+  .social {
+    gap: 25rem;
+    .contact {
+      gap: 2rem;
+      .contactinfo {
+        gap: 1rem;
+        .logo2 {
+          height: 2.4rem;
+          width: 2.4rem;
+        }
+        .contactdetails {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+  .logo_box {
+    margin-top: 2rem;
+    .logo {
+      height: 15rem;
+      width: 28rem;
+    }
+  }
+}
+@media screen and (min-width: 1900px) {
+  .social {
+    gap: 22rem;
+    .contact {
+      gap: 2rem;
+      .contactinfo {
+        gap: 1rem;
+        .logo2 {
+          height: 2.2rem;
+          width: 2.2rem;
+        }
+        .contactdetails {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  .logo_box {
+    margin-top: 2rem;
+    .logo {
+      height: 20rem;
+      width: 35rem;
+    }
+  }
+  .center {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+  .gdsctext {
+    font-size: 1.4rem;
+  }
+  .arrow {
+    height: 1.2rem;
+  }
+  .gdsclogo {
+    .animation {
+      height: 8rem;
+      width: 10rem;
+    }
+  }
+  .bottom {
+    .p {
+      font-size: 1.5rem;
+    }
+  }
+}
+@media screen and (min-width: 2500px) {
+  .imgtop {
+    height: 23rem;
+    width: 40em;
+  }
+  .png {
+    .imgbottom {
+      height: 23rem;
+      width: 40em;
+    }
   }
 }

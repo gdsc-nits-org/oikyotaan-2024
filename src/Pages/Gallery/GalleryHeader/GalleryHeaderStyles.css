@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Snippet&display=swap");
+
+.header_container {
+  display: flex;
+  gap: 0rem;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  position: relative;
+}
+
+.title_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: "Snippet", sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.89);
+  text-transform: uppercase;
+}
+
+.drum_left,
+.drum_right {
+  width: 6rem;
+}
+
+.drum_left {
+  transform: scaleX(-1);
+}
+
+.curl {
+  width: 16rem;
+  height: auto;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+@media (max-width: 475px) {
+  .title {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.89);
+  }
+
+  .drum_left,
+  .drum_right {
+    width: 5rem;
+    /* height: 3.2rem; */
+  }
+
+  .curl {
+    width: 12rem;
+    height: auto;
+  }
+
+  .header_container {
+    gap: 0.2rem;
+  }
+}

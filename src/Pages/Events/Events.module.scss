@@ -1,9 +1,8 @@
+:root{
+  --swiper-navigation-color:white;
+}
 .ParentDiv {
-  //   display: flex;
-  //   // background-color: rgb(71, 52, 52);
-  //   justify-content: center;
-  //   flex-direction: column;
-  //   align-items: center;
+ 
   padding-top: 5rem;
   background: linear-gradient(to bottom, #3d029d 0%, #3f1560 100%);
   //   overflow: hidden;
@@ -12,18 +11,11 @@
   background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1712137199/pngwing_3_slripp.webp);
 }
 
-// .LeftDhol{
-//   position: relative;
-//   background-color: darkblue;
-// }
-// .RightDhol{
-//   position: relative;
-//   background-color: aquamarine;
-// }
+
 
 .BottomImage {
   position: relative;
-  //   top: -2rem;
+  
 }
 .bottomParent {
   display: flex;
@@ -54,12 +46,16 @@
   width: 60%;
   border-radius: 18px;
   border: 4.5px solid #3f1560;
-  //   border: 0.1vw solid #ffffff;
-  //   background-color: #403370;
-  //   border-radius: 2.5rem;
   backdrop-filter: blur(20px);
   margin-bottom: 4rem;
   padding: 1rem;
+  background: transparent;
+        background: linear-gradient(140deg, rgba(255, 255, 255, 0.3) 0.4%, rgba(255, 255, 255, 0.1) 50%);
+        border-radius: 30px;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 4px solid #3f1560;
+        box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.2);
 }
 
 .EventImg {
@@ -168,32 +164,9 @@ button {
   align-items: center;
   width: 95%;
   height: 100%;
-  // background-color: red;
 }
 
-// @media screen and (max-width: 1395px) {
-//   .BottomDiv {
-//     margin: 0 auto;
-//   }
-// }
-// @media screen and (max-width: 1180px) {
-//   .TopDiv {
-//     scale: 0.7;
-//   }
-// }
-// @media screen and (max-width: 1000px) {
-//   .TopDiv {
-//     scale: 0.6;
-//   }
-// }
-// @media screen and (max-width: 700px) {
-//   .TopDiv {
-//     scale: 0.5;
-//   }
-//   .BottomDiv {
-//     scale: 0.9;
-//   }
-// }
+
 
 // media-queries
 @media screen and (max-width: 800px) {

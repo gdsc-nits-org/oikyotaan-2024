@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "image1",
+    "imageAddress": "https://res.cloudinary.com/dyn3q57b8/image/upload/f_auto,q_auto,fl_lossy/v1/Oikyotaan%20'24%20assets/Gallery/image1"
+  },
+  {
+    "id": 2,
+    "title": "image2",
+    "imageAddress": "https://res.cloudinary.com/dyn3q57b8/image/upload/f_auto,q_auto,fl_lossy/v1/Oikyotaan%20'24%20assets/Gallery/image2"
+  },
+  {
+    "id": 3,
+    "title": "image3",
+    "imageAddress": "https://res.cloudinary.com/dyn3q57b8/image/upload/f_auto,q_auto,fl_lossy/v1/Oikyotaan%20'24%20assets/Gallery/image3"
+  }
+]

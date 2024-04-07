@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Loader.module.scss";
-// import Loader from "./Loader";
+import Loader from "./Loader";
 
 // todo: this will be used to show the when the user for the first loads the page. loading screen will be shown unless and until all the asseets are loaded.
 
@@ -34,7 +34,7 @@ const InitialLoadingForHome = () => {
 
   return (
     <div className={`${styles.loader} ${loading ? styles.active : ""}`}>
-      {/* <Loader /> */}
+      <Loader />
     </div>
   );
 };

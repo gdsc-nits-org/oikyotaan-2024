@@ -1,9 +1,15 @@
 // This is a part of Template
 .home {
-  height: fit-content;
+  min-height: 100vh;
+  h1 {
+    font-weight: bold;
+  }
+  .error {
+    color: red;
+  }
 }
 body {
-  background-image: url("https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712168548/Oikyotaan/ARTISTS_vdajxa.webp");
+  background-image: url("https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712334439/Oikyotaan/ARTISTS_zp8gv6.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
