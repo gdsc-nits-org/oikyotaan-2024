@@ -4,7 +4,7 @@ import React from "react";
 // eslint-disable-next-line import/no-unresolved
 import { Swiper, SwiperSlide } from "swiper/react";
 // eslint-disable-next-line import/no-unresolved
-import { Navigation, Autoplay } from "swiper/core";
+import { Navigation, Autoplay, Pagination } from "swiper/core";
 // Import Swiper style
 // import 'swiper/css';
 import EventHeader from "./EventHeader";
@@ -25,6 +25,9 @@ const Events = () => {
           <div className={style.BottomDiv}>
             <Swiper
               navigation
+              pagination={true}
+              autoplay={true}
+              loop={true}
               modules={[Navigation, Autoplay]}
               className={style.mySwiper}
             >
