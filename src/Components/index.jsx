@@ -3,5 +3,6 @@ import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
 import { AboutNits } from "./About";
 import { AboutUs } from "./About";
-
-export { Button, Navbar, Footer, AboutUs, AboutNits };
+// import InitialLoadingForHome from "./Loader/LoadingHome";
+import Loader from "./Loader/Loader";
+export { Button, Navbar, Footer, AboutUs, AboutNits, Loader };

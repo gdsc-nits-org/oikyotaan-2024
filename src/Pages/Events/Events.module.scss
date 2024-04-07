@@ -1,37 +1,17 @@
-.TopDiv {
-  display: flex;
-  // background-color: rgb(71, 52, 52);
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 3rem;
-  // background: linear-gradient(to bottom, #3d029d 0%, #3f1560 100%);
-}
-.TextParent {
-  font-weight: 400;
-  color: azure;
-  font-size: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  top: 2rem;
-  justify-content: center;
-}
 .ParentDiv {
-  display: flex;
-  // background-color: rgb(71, 52, 52);
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 4rem;
+  //   display: flex;
+  //   // background-color: rgb(71, 52, 52);
+  //   justify-content: center;
+  //   flex-direction: column;
+  //   align-items: center;
+  padding-top: 5rem;
+  background: linear-gradient(to bottom, #3d029d 0%, #3f1560 100%);
+  //   overflow: hidden;
+  // margin-top: 12rem;
   // background: linear-gradient(to bottom, #3d029d 0%, #3f1560 100%);
-  // background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1712137199/pngwing_3_slripp.webp);
+  background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1712137199/pngwing_3_slripp.webp);
 }
 
-.Lftdrum {
-  transform: scaleX(-1);
-}
 // .LeftDhol{
 //   position: relative;
 //   background-color: darkblue;
@@ -40,31 +20,59 @@
 //   position: relative;
 //   background-color: aquamarine;
 // }
+
 .BottomImage {
   position: relative;
-  top: -2rem;
+  //   top: -2rem;
 }
 .bottomParent {
   display: flex;
   align-items: center;
   justify-content: center;
+  //   margin-top: -20rem
+  margin: 0 auto;
+  //   border-radius: 18px;
+  //   border: 4px solid #3f1560;
+  //   backdrop-filter: blur(20px);
+}
+.LeftBtn {
+  background-color: transparent;
+  @media screen and (max-width: 315px) {
+    scale: 0.5;
+  }
+}
+.RightBtn {
+  background-color: transparent;
+  @media screen and (max-width: 315px) {
+    scale: 0.5;
+  }
 }
 .BottomDiv {
   background-image: none;
   display: flex;
   flex-direction: column;
-  margin-left: 9vw;
-  margin-right: 9vw;
-  border: 0.1vw solid #ffffff;
-  background-color: #403370;
-  border-radius: 2.5rem;
+  width: 60%;
+  border-radius: 18px;
+  border: 4.5px solid #3f1560;
+  //   border: 0.1vw solid #ffffff;
+  //   background-color: #403370;
+  //   border-radius: 2.5rem;
   backdrop-filter: blur(20px);
   margin-bottom: 4rem;
+  padding: 1rem;
 }
 
 .EventImg {
   padding-top: 10%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .img {
+    width: 100%;
+    height: 100%;
+  }
 }
 .EventText {
   font-weight: 300;
@@ -76,12 +84,16 @@
 .SliderDiv {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .h1 {
   color: antiquewhite;
   text-align: center;
   font-weight: 200;
   font-family: var(--font-1);
+  position: relative;
+  top: 0.6rem;
 }
 .Text {
   font-family: var(--font-1);
@@ -108,26 +120,97 @@ button {
   justify-content: space-around;
   height: 10%;
 }
-@media screen and (max-width: 1395px) {
+.swiperclass {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mySwiper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 80%;
+}
+.image {
+  height: 60%;
+  width: 50%;
+}
+.swiperclass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 100%;
+  // background-color: red;
+}
+
+// @media screen and (max-width: 1395px) {
+//   .BottomDiv {
+//     margin: 0 auto;
+//   }
+// }
+// @media screen and (max-width: 1180px) {
+//   .TopDiv {
+//     scale: 0.7;
+//   }
+// }
+// @media screen and (max-width: 1000px) {
+//   .TopDiv {
+//     scale: 0.6;
+//   }
+// }
+// @media screen and (max-width: 700px) {
+//   .TopDiv {
+//     scale: 0.5;
+//   }
+//   .BottomDiv {
+//     scale: 0.9;
+//   }
+// }
+
+// media-queries
+@media screen and (max-width: 800px) {
   .BottomDiv {
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 1180px) {
-  .TopDiv {
-    scale: 0.7;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .TopDiv {
-    scale: 0.6;
+    width: 85vw;
   }
 }
 @media screen and (max-width: 700px) {
-  .TopDiv {
-    scale: 0.5;
+  .BottomDiv {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .EventText {
+    font-size: 12px;
   }
   .BottomDiv {
-    scale: 0.9;
+    width: 95%;
   }
 }
