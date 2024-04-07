@@ -35,7 +35,7 @@ const AboutUs = () => {
       <div className={styles.top}>
         <div className={styles.inner}>
           <div className={styles.ldrum}>
-            <Lottie animationData={rdrum} />
+            <Lottie animationData={rdrum} loop/>
           </div>
           <div className={styles.header}>
             <p className={styles.heading}>About Us</p>
@@ -46,7 +46,7 @@ const AboutUs = () => {
             />
           </div>
           <div className={styles.rdrum}>
-            <Lottie animationData={rdrum} />
+            <Lottie animationData={rdrum} loop/>
           </div>
         </div>
       </div>

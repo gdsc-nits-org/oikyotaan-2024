@@ -1,12 +1,14 @@
 import styles from "./Home.module.scss";
-import { AboutUs, AboutNits } from "../../Components";
-
+import {Gallery, Sponsors, AboutUs, AboutNits} from '../../Components'
 const Home = () => {
   return (
-    <div className={styles.home}>
+    <main className={styles.home}>
+      <h1>Oikyotaan 2024</h1>
       <AboutUs />
       <AboutNits />
-    </div>
+      <Sponsors />
+      <Gallery />
+    </main>
   );
 };
 
