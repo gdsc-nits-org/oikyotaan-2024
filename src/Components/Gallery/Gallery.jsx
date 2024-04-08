@@ -8,6 +8,7 @@ let img1 = "https://res.cloudinary.com/dyn3q57b8/image/upload/f_auto,q_auto,fl_l
 let img2 = "https://res.cloudinary.com/dyn3q57b8/image/upload/f_auto,q_auto,fl_lossy/v1/Oikyotaan%20'24%20assets/Gallery/image2"
 let img3 = "https://res.cloudinary.com/dyn3q57b8/image/upload/f_auto,q_auto,fl_lossy/v1/Oikyotaan%20'24%20assets/Gallery/image3"
 import GalleryHeader from './GalleryHeader/GalleryHeader';
+// import GalleryImages from './GalleryImages.json'
 
 
 

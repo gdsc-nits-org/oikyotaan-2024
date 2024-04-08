@@ -1,6 +1,7 @@
 import styles from "./Home.module.scss";
-import { useEffect } from "react";
 import {Gallery, Sponsors, AboutUs, AboutNits} from '../../Components'
+import { useEffect } from "react";
+import Hero from "../../Components/Hero/Hero";
 
 const Home = () => {
 
@@ -10,6 +11,7 @@ const Home = () => {
 
   return (
     <main className={styles.home}>
+      <Hero/>
       <AboutUs />
       <AboutNits />
       <Sponsors />

@@ -1,16 +1,16 @@
 // This is a part of Template
 .home {
   min-height: 100vh;
-  h1 {
-    font-weight: bold;
-  }
-  .error {
-    color: red;
-  }
+  padding-top: 4rem;
 
 }
 body {
   background-image: url("https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712334439/Oikyotaan/ARTISTS_zp8gv6.webp");
   background-size: cover;
   background-repeat:no-repeat;
+}
+@media screen and (max-width:758px){
+  .home{
+    padding-top: 2.8rem;
+  }
 }

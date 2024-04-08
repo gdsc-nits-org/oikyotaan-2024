@@ -13,7 +13,6 @@
   background-color: transparent;
   overflow: hidden;
   white-space: nowrap;
-  margin-top: 4rem;
   .slide {
     display: inline-block;
     animation: 15s slide infinite linear;
@@ -331,10 +330,5 @@
         left: 25rem;
       }
     }
-  }
-}
-@media screen and (max-width: 758px) {
-  .slide_parent {
-    margin-top: 3.5rem;
   }
 }
