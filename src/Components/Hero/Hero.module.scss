@@ -73,6 +73,7 @@
     width: 100%;
     height: 100%;
     object-position: center;
+    transform: translateY(2%);
 
     position: absolute;
     bottom: 0;
@@ -81,9 +82,9 @@
     animation: kitti 3s ease-in-out;
 
     
-    @media screen and (max-width: 1200px) {
-      transform: translateY(2%);
-    }
+    // @media screen and (max-width: 1200px) {
+    //   transform: translateY(2%);
+    // }
 
     @media screen and (max-width: 640px) {
       transform: translateY(5%);
@@ -96,7 +97,7 @@
 
   @keyframes logo {
     0%{
-      scale: 1;
+      scale: 0.8;
     }
     100%{
       transform: translateY(150%);
@@ -107,8 +108,8 @@
   .logo{
     width: 60vmin;
     position: absolute;
-    top: -3%;
-    scale: 1;
+    top: 0%;
+    scale: 0.8;
 
     animation: logo 6s ease-in-out reverse;
 
@@ -116,5 +117,26 @@
       transform: translateY(40%);
     }
 
+  }
+
+  @keyframes cloud {
+    0%{
+      transform: translateX(-150%);
+    }
+    100%{
+      transform: translateX(150%);
+    }
+  }
+
+  .clouds{
+    position: absolute;
+    animation: cloud 25s ease-in-out infinite alternate-reverse;
+  }
+
+  .clouds2{
+    position: absolute;
+    animation: cloud 25s ease-in-out infinite alternate;
+    left: 0;
+    bottom: 40%;
   }
 }
