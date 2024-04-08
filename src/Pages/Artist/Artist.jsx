@@ -3,8 +3,14 @@ import styles from "./Artist.module.scss";
 import Card from "../../Components/Artist/ArtistCard";
 import artist from "./Artist.json";
 import rdrum from "../../Lottiefiles/drum right.json";
+import { useEffect } from "react";
 
 const Artist = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+  
   const Artists = (d) => {
     return <Card {...d} key={d.id} />;
   };

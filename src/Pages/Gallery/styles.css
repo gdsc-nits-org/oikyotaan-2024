@@ -6,6 +6,8 @@
 
 .galleryPage-container {
   padding-top: 8rem;
+  min-height: 100vh;
+  width:100%;
 }
 
 .swiper {
