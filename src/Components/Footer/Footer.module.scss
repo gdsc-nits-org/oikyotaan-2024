@@ -11,6 +11,8 @@
   background-color: transparent;
   overflow: hidden;
   white-space: nowrap;
+  position: relative;
+  top:.5rem;
   .slide {
     display: inline-block;
     animation: 15s slide infinite linear;
