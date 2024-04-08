@@ -8,12 +8,10 @@ import fluter from "../../../public/artist_assets/flute_right.svg";
 import artistimg from "../../../public/artist_assets/artist_img.svg";
 import framel from "../../../public/artist_assets/frame_left.svg";
 import framer from "../../../public/artist_assets/frame_right.svg";
-import { Navbar } from "../../Components";
 
 const Artist = () => {
   return (
     <div className={styles.artist_page}>
-      <Navbar/>
       <img
         alt="tmg"
         className={styles.bg_img}
