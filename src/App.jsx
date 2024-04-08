@@ -1,9 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { useState, lazy, Suspense } from "react";
-
-
-
 import { Navbar, Footer, Loading } from "./Components";
+
 const Gallery = lazy(() =>
   import("./Pages/index").then((module) => ({ default: module.Gallery }))
 );
