@@ -34,6 +34,7 @@ const Navbar = () => {
     document.addEventListener("mousedown", handler);
   },[]);
 
+
   return (
     <div className={styles.navCont}>
       <div className={styles.NavbarMobile}>
