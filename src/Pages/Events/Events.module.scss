@@ -7,6 +7,7 @@
   background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1712137199/pngwing_3_slripp.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 
 
@@ -50,10 +51,6 @@
   border-image: radial-gradient(rgb(255,0,214.2),rgba(21,21,21,0)) 1;
   box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.2);
 }
-.BottomDiv:hover{
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
-}
-
 .EventImg {
   padding-top: 10%;
   margin: 0 auto;

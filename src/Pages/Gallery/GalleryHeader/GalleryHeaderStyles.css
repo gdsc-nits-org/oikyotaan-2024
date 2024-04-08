@@ -1,65 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Snippet&display=swap');
-
-.header_container {
+.top {
     display: flex;
-    gap: 0rem;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-    position: relative;
-}
-
-.title_div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-}
-
-.title {
-    font-family: "Snippet", sans-serif;
-    font-weight: bolder;
-    font-size: 2rem;
-    color: rgba(255, 255, 255, 0.89);
-    text-transform: uppercase;
-}
-
-.drum_left, .drum_right {
-    width: 6rem;
-}
-
-.drum_left {
-    transform: scaleX(-1);
-}
-
-.curl {
-    width: 16rem;
-    height: auto;
-}
-
-
-
-
-
-/* ===== MEDIA QUERIES ===== */
-
-@media (max-width: 475px){
-    .title {
-        font-size: 1.5rem;
-        color: rgba(255, 255, 255, 0.89);
+    justify-content: center;
+    gap: 0rem;
+    margin-bottom: 4rem;
+    height: fit-content;
+    max-width: 100vw;
+    .inner {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 0rem;
     }
-    
-    .drum_left, .drum_right {
-        width: 5rem;
-        /* height: 3.2rem; */
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: 2rem;
+      width: 33%;
+      justify-content: center;
+      flex-wrap: nowrap;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      .logo {
+        height: 3.3rem;
+        width: 15rem;
+      }
     }
-    
-    .curl {
-        width: 12rem;
-        height: auto;
+  
+    .ldrum,
+    .rdrum {
+      height: 6rem;
+      width: 6rem;
     }
-
-    .header_container {
-        gap: .2rem;
+    .ldrum {
+      transform: scaleX(-1);
     }
-}
+    .heading {
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-family: "Snippet", sans-serif;
+      font-weight: 700;
+      font-size: 2.2rem;
+    }
+  }

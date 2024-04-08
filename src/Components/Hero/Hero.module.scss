@@ -8,6 +8,9 @@
   align-items: flex-start;
   justify-content: center;
   animation: bg 4s linear reverse;
+  .parent{
+    margin-top: 2rem;;
+  }
 
   @keyframes bg {
     0%{
