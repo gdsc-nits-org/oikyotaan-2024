@@ -1,6 +1,6 @@
 import './GalleryHeaderStyles.css'
 import Lottie from 'lottie-react'
-import Dhol from "../../../assets/AnimationData/drum_right.json";
+import Dhol from "../../../Lottiefiles/drum right.json";
 
 const GalleryHeader = () => {
   return (
