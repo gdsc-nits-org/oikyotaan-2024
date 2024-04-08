@@ -17,6 +17,9 @@ const Team = lazy(() =>
 const Artist = lazy(() =>
   import("./Pages/index").then((module) => ({ default: module.Artist }))
 );
+const Events = lazy(() =>
+  import("./Pages/index").then((module) => ({ default: module.Events }))
+);
 const Error = lazy(() =>
   import("./Pages/index").then((module) => ({ default: module.Error }))
 );
@@ -35,9 +38,10 @@ const [loading, setLoading] = useState(false);
       <Routes>
         <Route path="/" element={<Home setLoading={setLoading} />} />
         <Route path="/artist" element={<Artist setLoading={setLoading} />} />
-        <Route path="*" element={<Error setLoading={setLoading} />} />
+        <Route path="/event" element={<Events setLoading={setLoading} />} />
         <Route path="/gallery" element={<Gallery setLoading={setLoading} />} />
         <Route path="/team" element={<Team setLoading={setLoading} />} />
+        <Route path="*" element={<Error setLoading={setLoading} />} />
       </Routes>
       <Footer />
       </Suspense>
