@@ -1,3 +1,9 @@
+
+:root {
+  --swiper-pagination-color: rgba(255, 255, 255, 0.612);
+}
+
+
 .galleryPage-container {
   padding-top: 8rem;
 }

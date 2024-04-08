@@ -89,21 +89,18 @@
     width: 10.75rem;
     border-radius: .58rem;
   }
-  
-  
-  /* .card:hover::before{
-    opacity: 1;
-  } */
 }
 
 
-@media (max-width: 444px){
-  .grid_container {
-    gap: 2rem;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    /* overflow: hidden; */
-    overflow-x: scroll;
-    justify-content: flex-start;
-  }
+@media (max-width: 444px){  
+    .card {
+      height: 7.65rem;
+      width: 6.4rem;
+    }
+
+    .spons_img {
+      height: 7.2rem;
+      width: 5.95rem;
+    }
+
 }
