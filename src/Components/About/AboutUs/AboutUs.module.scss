@@ -150,18 +150,23 @@
     }
     .parent {
       height: 5rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
       .btn_parent {
-        margin-top: 1rem;
+        position: absolute;
+        height: 3rem;
+        width: 8rem;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        z-index: 1;
-        background-color: #fd5282;
+        background-color: #eb2059;
         padding: 12px 15px;
         border-radius: 10px;
-        max-width: fit-content;
         cursor: pointer;
+        overflow: hidden;
         .btn {
           font-family: "Snippet", sans-serif;
           font-size: 1.3rem;
@@ -175,13 +180,31 @@
           white-space: nowrap;
         }
       }
-    }
-  }
-  .btn_parent:hover {
-    border: 2px solid #ffffff;
-  }
-  .btn:hover {
-    margin-top: -2px;
+      .btn_parent::before {
+        content:'';
+        position: absolute;    
+        height: 50%;
+        width: 100%;
+        // border-radius: 10px;
+        background-color: #ffffff;
+        animation: animate 4s linear infinite;
+      }
+      .btn_parent::after {
+        content:'';
+        position: absolute;
+        background-color: #eb2059;
+        border-radius: 10px;
+        inset: 3px;
+      }
+      @keyframes animate {
+        0%{
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    
   }
 }
 @media screen and (max-width: 758px) {
