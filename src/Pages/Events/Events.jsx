@@ -1,22 +1,12 @@
 import React from "react";
-// import { useRef, useState } from 'react';
-// Import Swiper React components
-// eslint-disable-next-line import/no-unresolved
 import { Swiper, SwiperSlide } from "swiper/react";
-// eslint-disable-next-line import/no-unresolved
 import { Navigation, Autoplay, Pagination } from "swiper/core";
-// Import Swiper style
-// import 'swiper/css';
 import EventHeader from "./EventHeader";
 import style from "./Events.module.scss";
 import EventsArr from "./Events.json";
 
 
 const Events = () => {
-  // const [index, setStep] = React.useState(0);
-  // const Size = EventsArr.length;
-  
-
   return (
     <div style={{ overflowX: "hidden" }}>
       <div className={style.ParentDiv}>
@@ -41,63 +31,6 @@ const Events = () => {
                 );
               })}
             </Swiper>
-            {/* <SwiperSlide className={style.swiperclass}>
-                <img
-                  src={EventsArr[index].src}
-                  alt={EventsArr[index].id}
-                  className={style.image}
-                />
-                <h1 className={style.h1}>{EventsArr[index].name}</h1>
-                <div className={style.EventText}>{EventsArr[index].text}</div>
-              </SwiperSlide>
-              <SwiperSlide className={style.swiperclass}>
-                <img
-                  src={EventsArr[index].src}
-                  alt={EventsArr[index].id}
-                  className={style.image}
-                />
-                <h1 className={style.h1}>{EventsArr[index].name}</h1>
-                <div className={style.EventText}>{EventsArr[index].text}</div>
-              </SwiperSlide>
-              <SwiperSlide className={style.swiperclass}>
-                <img
-                  src={EventsArr[index].src}
-                  alt={EventsArr[index].id}
-                  className={style.image}
-                />
-                <h1 className={style.h1}>{EventsArr[index].name}</h1>
-                <div className={style.EventText}>{EventsArr[index].text}</div>
-              </SwiperSlide>
-              <SwiperSlide className={style.swiperclass}>
-                <img
-                  src={EventsArr[index].src}
-                  alt={EventsArr[index].id}
-                  className={style.image}
-                />
-                <h1 className={style.h1}>{EventsArr[index].name}</h1>
-                <div className={style.EventText}>{EventsArr[index].text}</div>
-              </SwiperSlide> */}
-
-            {/* <div className={style.SliderDiv}>
-              <button onClick={NextSlider} type="button" aria-label="left" className={style.LeftBtn}>
-                <img
-                  alt=""
-                  src="https://res.cloudinary.com/dl0knguhb/image/upload/v1712134689/iconamoon_arrow-left-2_o8dsbr.webp"
-                />
-              </button>
-              <div className={style.EventImg}>
-                <img alt={EventsArr[index].id} className={style.img} src={EventsArr[index].src} />
-                <h1 className={style.h1}>{EventsArr[index].name}</h1>
-              </div>
-              {/* <button onClick={NextSlider} type="button" aria-label="right" className={style.RightBtn}>
-                <img
-                  alt=""
-                  src="https://res.cloudinary.com/dl0knguhb/image/upload/v1712134959/iconamoon_arrow-left-2_1_n4ne3p.webp"
-                />
-              </button> */}
-            {/* </div>
-
-            <div className={style.EventText}>{EventsArr[index].text}</div> */}
           </div>
         </div>
       </div>
