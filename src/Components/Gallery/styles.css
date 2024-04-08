@@ -1,5 +1,17 @@
 .gallery-container {
-  margin-top: 12rem;
+  margin-top: 8rem;
+}
+
+@media (max-width: 768px) {
+  .gallery-container{
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .gallery-container{
+    margin-top: 0rem;
+  }
 }
 
 .swiper {
