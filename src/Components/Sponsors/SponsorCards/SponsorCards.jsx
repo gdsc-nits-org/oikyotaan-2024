@@ -1,10 +1,10 @@
 import './SponsorCardsStyles.css'
-import Cards from './SponsorCards'
+import SponsorCardsData from './SponsorCardsData'
 
-const SponsorCards = () => {
+const Cards = () => {
   return (
     <div className='grid_container'>
-      {Cards.map((item)=>(
+      {SponsorCardsData.map((item)=>(
         <div className="card">
           <img className='spons_img' src={item} alt="a sponsor" />
         </div>
@@ -13,4 +13,4 @@ const SponsorCards = () => {
   )
 }
 
-export default SponsorCards
+export default Cards
