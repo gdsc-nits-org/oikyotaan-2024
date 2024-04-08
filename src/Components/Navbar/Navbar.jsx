@@ -12,7 +12,7 @@ const Navbar = () => {
       "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712134338/Oikyotaan/active_qeoqes.svg",
   };
   const logo =
-    "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712134422/Oikyotaan/oikyotaan_bg_vector_cbkgpe.svg";
+    "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712052815/Oikyotaan/ascrgnkddoyvanfs3ohr.svg";
   const hamClick = async (e) => {
     e.target.style.opacity = "0";
     setTimeout(() => {

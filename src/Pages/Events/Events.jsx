@@ -3,9 +3,15 @@ import { Navigation, Autoplay, Pagination } from "swiper/core";
 import EventHeader from "./EventHeader";
 import style from "./Events.module.scss";
 import EventsArr from "./Events.json";
+import { useEffect } from "react";
 
 
 const Events = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+  
   return (
     <div style={{ overflowX: "hidden" }}>
       <div className={style.ParentDiv}>
@@ -13,11 +19,14 @@ const Events = () => {
         <div className={style.bottomParent}>
           <div className={style.BottomDiv}>
             <Swiper
-              navigation
+              navigation={true}
               pagination={true}
-              autoplay={true}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
               loop={true}
-              modules={[Navigation, Autoplay]}
+              modules={[Navigation, Autoplay,Pagination]}
               className={style.mySwiper}
             >
               {EventsArr.map((e) => {

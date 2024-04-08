@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import {  useState, lazy, Suspense } from "react";
+import { useState, lazy, Suspense } from "react";
 
 
 
@@ -25,25 +25,24 @@ const Error = lazy(() =>
 );
 
 const App = () => {
-  
-const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   return (
     <>
       {
-        loading && 
-          <Loading />
+        loading &&
+        <Loading />
       }
       <Suspense fallback={<Loading />}>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home setLoading={setLoading} />} />
-        <Route path="/artist" element={<Artist setLoading={setLoading} />} />
-        <Route path="/events" element={<Events setLoading={setLoading} />} />
-        <Route path="/gallery" element={<Gallery setLoading={setLoading} />} />
-        <Route path="/team" element={<Team setLoading={setLoading} />} />
-        <Route path="*" element={<Error setLoading={setLoading} />} />
-      </Routes>
-      <Footer />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home setLoading={setLoading} />} />
+          <Route path="/artist" element={<Artist setLoading={setLoading} />} />
+          <Route path="/events" element={<Events setLoading={setLoading} />} />
+          <Route path="/gallery" element={<Gallery setLoading={setLoading} />} />
+          <Route path="/team" element={<Team setLoading={setLoading} />} />
+          <Route path="*" element={<Error setLoading={setLoading} />} />
+        </Routes>
+        <Footer />
       </Suspense>
     </>
   );

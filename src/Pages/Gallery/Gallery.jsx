@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useEffect } from 'react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -12,6 +13,11 @@ import GalleryHeader from './GalleryHeader/GalleryHeader';
 
 
 const Gallery = ()=> {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+  
   return (
     <div className='galleryPage-container'>  
 
