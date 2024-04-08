@@ -37,7 +37,7 @@ const Navbar = ({isHome = false}) => {
 
   useEffect(() => {
     const SetNavbar = () => {
-      if (window.scrollY >= 100) {
+      if (window.scrollY >= 400) {
         setNavVissible(true);
       } else {
         if(isHome){
