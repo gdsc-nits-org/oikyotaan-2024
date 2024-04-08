@@ -14,8 +14,8 @@ const Home = () => {
       <Hero/>
       <AboutUs />
       <AboutNits />
-      <Sponsors />
       <Gallery />
+      <Sponsors />
     </main>
   );
 };
