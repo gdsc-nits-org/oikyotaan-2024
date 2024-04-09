@@ -49,7 +49,7 @@
   display: block;
   width: 100%;
   border-radius: .8rem;
-  filter: blur(5px);
+  filter: blur(5.5px);
 }
 .swiper-slide-active img{
   filter: blur(0);
