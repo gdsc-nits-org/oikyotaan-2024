@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Lottie from "lottie-react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import { Autoplay, EffectCoverflow } from "swiper/core";
-import styles from "./team.module.scss";
+import styles from "./Team.module.scss";
 import data from "../../../public/db/team.json";
 import { Card } from "../../Components/Team/Card";
 import drumLeft from "./drum right.json";
-
 import "swiper/css";
 import "swiper/css/effect-coverflow";
+
 const Team = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -70,7 +69,7 @@ const Team = () => {
     );
   };
   useEffect(() => {
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
   }, []);
 
   return (
