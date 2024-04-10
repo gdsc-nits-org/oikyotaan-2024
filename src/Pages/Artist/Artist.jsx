@@ -1,9 +1,9 @@
 import Lottie from "lottie-react";
+import { useEffect } from "react";
 import styles from "./Artist.module.scss";
 import Card from "../../Components/Artist/ArtistCard";
 import artist from "./Artist.json";
 import rdrum from "../../Lottiefiles/drum right.json";
-import { useEffect } from "react";
 
 const Artist = () => {
 
