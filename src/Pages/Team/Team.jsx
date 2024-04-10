@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Lottie from "lottie-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCoverflow } from "swiper/core";
-import styles from "./Team.module.scss";
+import styles from "./team.module.scss";
 import data from "../../../public/db/team.json";
 import { Card } from "../../Components/Team/Card";
 import drumLeft from "./drum right.json";
