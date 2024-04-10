@@ -34,7 +34,9 @@ const Artist = () => {
           </div>
         </div>
       </div>
-      <div className={styles.artist_cont}>{artist.map(Artists)}</div>
+      <div className={styles.artist_cont}>
+        <Artists data={artist} />
+      </div>
     </div>
   );
 };
