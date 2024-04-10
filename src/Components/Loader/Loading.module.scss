@@ -36,12 +36,24 @@
     opacity: 1;
   }
   25% {
-    transform: scale(4);
+    transform: scale(3.5);
     opacity: 0.75;
   }
+  40% {
+    transform: scale(4);
+    opacity: 0.6;
+  }
   50% {
-    transform: scale(5);
+    transform: scale(4.5);
     opacity: 0.5;
+  }
+  60% {
+    transform: scale(5);
+    opacity: 0.4;
+  }
+  75% {
+    transform: scale(5.5);
+    opacity: 0.2;
   }
   100% {
     transform: scale(6);

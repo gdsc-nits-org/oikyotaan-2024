@@ -1,0 +1,57 @@
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+    margin-bottom: 4rem;
+    height: fit-content;
+    max-width: 100vw;
+    margin-top: 6rem;
+    .inner {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 0rem;
+    }
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: 2rem;
+      width: 35%;
+      justify-content: center;
+      flex-wrap: nowrap;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      .logo {
+        height: 3.3rem;
+        width: 15rem;
+      }
+    }
+  
+    .ldrum,
+    .rdrum {
+      height: 6rem;
+      width: 6rem;
+    }
+    .ldrum {
+      transform: scaleX(-1);
+    }
+    .heading {
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-family: "Snippet", sans-serif;
+      font-weight: 700;
+      font-size: 2.2rem;
+    }
+  }
+  
+  @media screen and (max-width:364px) {
+    .top{
+      scale: 0.8;
+    }
+  }

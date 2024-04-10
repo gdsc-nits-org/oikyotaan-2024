@@ -10,6 +10,13 @@
   width:100%;
 }
 
+@media screen and (max-width: 758px){
+  .galleryPage-container {
+    min-height: fit-content;
+    padding-bottom: 6rem;
+  }
+}
+
 .swiper {
   width: 100%;
   padding-top: 50px;
