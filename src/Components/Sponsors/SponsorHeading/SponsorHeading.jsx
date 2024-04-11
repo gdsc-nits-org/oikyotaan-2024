@@ -1,21 +1,27 @@
-import './SponsorHeadingStyles.css'
+import styles from'./SponsorHeadingStyles.module.scss'
 import Lottie from 'lottie-react'
-import Dhol from "../../../Lottiefiles/drum right.json";
+import rdrum from "../../../Lottiefiles/drum right.json";
 
 const SponsorHeading = () => {
   return (
-    <div className='header_container'>
-       <div className="drum_left">
-          <Lottie animationData={Dhol} />
-       </div>
-       <div className='title_div'>
-            <p className='title'>Sponsors</p>
-            <img className='curl' src="https://res.cloudinary.com/dyn3q57b8/image/upload/f_auto,q_auto/v1/Oikyotaan%20'24%20assets/Sponsors/underline" alt="an underline" />
-       </div>
-       <div className="drum_right">
-          <Lottie animationData={Dhol} />
-       </div>
-    </div>
+   <div className={styles.top}>
+   <div className={styles.inner}>
+     <div className={styles.ldrum}>
+       <Lottie animationData={rdrum} loop />
+     </div>
+     <div className={styles.header}>
+       <p className={styles.heading}>Sponsors</p>
+       <img
+         className={styles.logo}
+         src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712169046/Oikyotaan/vecteezy_text-divider-calligraphic-ornament-vintage-decorations_11839102-removebg-preview_1_nro44d.svg"
+         alt="logo"
+       />
+     </div>
+     <div className={styles.rdrum}>
+       <Lottie animationData={rdrum} loop />
+     </div>
+   </div>
+ </div>
   )
 }
 

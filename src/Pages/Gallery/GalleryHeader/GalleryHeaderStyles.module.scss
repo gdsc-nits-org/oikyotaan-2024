@@ -7,9 +7,7 @@
   margin-bottom: 4rem;
   height: fit-content;
   max-width: 100vw;
-  margin-top: 6rem;
-  padding-top: 2rem;
-  
+  margin-top: 3rem;
   .inner {
     display: flex;
     flex-direction: row;
@@ -23,14 +21,14 @@
     align-items: center;
     position: relative;
     top: 2rem;
-    width: 33%;
+    width: 50%;
     justify-content: center;
     flex-wrap: nowrap;
     margin-left: 1rem;
     margin-right: 1rem;
     .logo {
-      height: 3.3rem;
-      width: 15rem;
+      height: 4.3rem;
+      width: 20rem;
     }
   }
 
@@ -47,6 +45,7 @@
     text-transform: uppercase;
     color: #ffffff;
     font-family: "Snippet", sans-serif;
+    white-space: nowrap;
     font-weight: 700;
     font-size: 2.2rem;
   }
@@ -55,5 +54,12 @@
 @media screen and (max-width:364px) {
   .top{
     scale: 0.8;
+    .header{
+      width: 33%;
+    }
+    .heading{
+      white-space: break-spaces;
+    }
+
   }
 }

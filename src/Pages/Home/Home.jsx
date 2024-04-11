@@ -1,6 +1,6 @@
+import { useEffect } from "react";
 import styles from "./Home.module.scss";
 import {Gallery, Sponsors, AboutUs, AboutNits} from '../../Components'
-import { useEffect } from "react";
 import Hero from "../../Components/Hero/Hero";
 
 const Home = () => {
