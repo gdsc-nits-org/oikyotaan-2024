@@ -74,12 +74,8 @@ const AboutUs = () => {
         </div>
         <div className={styles.right}>
           <div className={styles.paragraph}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Amet nisl purus in mollis nunc
-            sed id. Lobortis elementum nibh tellus molestie nunc. Ac feugiat sed lectus
-            vestibulum mattis ullamcorper velit. Sed ullamcorper morbi tincidunt ornare
-            massa eget egestas. Et molestie ac feugiat sed lectus vestibulum mattis
-            ullamcorper. Eget aliquet nibh praesent tristique magna sit amet purus.
+          As spring gently nudges away winter's slumber, bringing with it vibrant colours, a gentle warmth creeps in, as if welcoming the NoboBorsho. The air hums with anticipation, mirroring the excitement in our hearts. The gentle breeze sways the leaves welcoming the new year with better beginnings and fresh hopes.
+          And amidst this effervescent atmosphere, our annual Bengali cultural extravaganza, Oikyotaan'24 pulsates with vibrant energy. A celebration of our rich heritage, a kaleidoscope of music, dance, art, and literature that unfolds against the backdrop of spring's magic.
           </div>
           <div className={styles.parent}>
             <div className={styles.btn_parent}>
