@@ -1,14 +1,14 @@
 [
-    {
-      "id":1,
-      "img": "https://res.cloudinary.com/dl0knguhb/image/upload/v1712837861/amullog_rchoy7.webp"
-    },
-    {
-       "id":2,
-       "img":"https://res.cloudinary.com/dl0knguhb/image/upload/v1712833114/Screenshot_2024-04-11_162157_at6wbk.webp"
-    },
-    {
-        "id":3,
-        "img": "https://res.cloudinary.com/dl0knguhb/image/upload/v1712833015/pnblogo_wzmgl2.webp"
-    }
+  {
+    "id": 1,
+    "img": "https://res.cloudinary.com/dl0knguhb/image/upload/v1712837861/amullog_rchoy7.webp"
+  },
+  {
+    "id": 2,
+    "img": "https://res.cloudinary.com/dl0knguhb/image/upload/v1712833114/Screenshot_2024-04-11_162157_at6wbk.webp"
+  },
+  {
+    "id": 3,
+    "img": "https://res.cloudinary.com/dl0knguhb/image/upload/v1712833015/pnblogo_wzmgl2.webp"
+  }
 ]

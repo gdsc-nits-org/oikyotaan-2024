@@ -8,24 +8,24 @@
   align-items: flex-start;
   justify-content: center;
   animation: bg 4s linear reverse;
-  .parent{
-    margin-top: 2rem;;
+  .parent {
+    margin-top: 2rem;
   }
 
   @keyframes bg {
-    0%{
+    0% {
       background-color: rgba(142, 184, 254, 1);
     }
-    100%{
-      background:#3D0984;
+    100% {
+      background: #3d0984;
     }
   }
 
   @keyframes foreground {
-    0%{
+    0% {
       transform: translateY(30%);
     }
-    100%{
+    100% {
       transform: translateY(0%);
     }
   }
@@ -44,35 +44,34 @@
       left: 0;
 
       @keyframes horse {
-        0%{
+        0% {
           transform: rotate(10deg);
         }
-        50%{
-            transform: rotate(-9deg);
+        50% {
+          transform: rotate(-9deg);
         }
-        100%{
-            transform: rotate(10deg);
+        100% {
+          transform: rotate(10deg);
         }
       }
-      .horse{
+      .horse {
         transform-origin: bottom;
         animation: horse 2s ease 4s infinite;
         // background-color: white;
       }
-      
     }
   }
 
   @keyframes kitti {
-    0%{
+    0% {
       scale: 1.5;
     }
-    100%{
+    100% {
       scale: 1;
     }
   }
 
-  .kitti{
+  .kitti {
     width: 100%;
     height: 100%;
     object-position: center;
@@ -84,7 +83,6 @@
     z-index: 0;
     animation: kitti 3s ease-in-out;
 
-    
     // @media screen and (max-width: 1200px) {
     //   transform: translateY(2%);
     // }
@@ -99,16 +97,16 @@
   }
 
   @keyframes logo {
-    0%{
+    0% {
       scale: 0.8;
     }
-    100%{
+    100% {
       transform: translateY(150%);
       scale: 2.5;
     }
   }
 
-  .logo{
+  .logo {
     width: 60vmin;
     position: absolute;
     top: 0%;
@@ -119,24 +117,23 @@
     @media screen and (max-width: 430px) {
       transform: translateY(40%);
     }
-
   }
 
   @keyframes cloud {
-    0%{
+    0% {
       transform: translateX(-150%);
     }
-    100%{
+    100% {
       transform: translateX(150%);
     }
   }
 
-  .clouds{
+  .clouds {
     position: absolute;
     animation: cloud 25s ease-in-out infinite alternate-reverse;
   }
 
-  .clouds2{
+  .clouds2 {
     position: absolute;
     animation: cloud 25s ease-in-out infinite alternate;
     left: 0;

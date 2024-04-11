@@ -1,17 +1,16 @@
-.grid_container{
+.grid_container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 3rem ;
+  gap: 3rem;
   width: 100%;
   margin: 0 auto;
   margin-top: 2rem;
   padding: 0 1.5rem;
-
 }
 
-.card{
+.card {
   position: relative;
   z-index: 1;
   background-image: linear-gradient(white, rgb(240, 113, 134));
@@ -20,10 +19,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 }
 
-.card::before{
+.card::before {
   position: absolute;
   content: "";
   top: 0;
@@ -31,35 +30,30 @@
   left: 0;
   right: 0;
   background-image: linear-gradient(rgb(240, 113, 134), white);
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   z-index: -1;
   opacity: 0;
-  transition: opacity .25s linear;
+  transition: opacity 0.25s linear;
 }
 
-
-.card:hover::before{
+.card:hover::before {
   opacity: 1;
 }
 
 .spons_img {
   height: 15rem;
   width: 13.75rem;
-  border-radius: .58rem;
+  border-radius: 0.58rem;
 }
-
-
-
 
 /*===== MEDIA QUERIES =====*/
 
-@media(max-width: 541px){
-
-  .grid_container{
+@media (max-width: 541px) {
+  .grid_container {
     gap: 3rem 1rem;
   }
 
-  .card{
+  .card {
     position: relative;
     z-index: 1;
     background-image: linear-gradient(white, rgb(240, 113, 134));
@@ -68,10 +62,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
   }
 
-  .card::before{
+  .card::before {
     position: absolute;
     content: "";
     top: 0;
@@ -79,29 +73,27 @@
     left: 0;
     right: 0;
     background-image: linear-gradient(rgb(240, 113, 134), white);
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     z-index: -1;
     opacity: 0;
-    transition: opacity .25s linear;
+    transition: opacity 0.25s linear;
   }
 
   .spons_img {
     height: 12rem;
     width: 10.75rem;
-    border-radius: .58rem;
+    border-radius: 0.58rem;
   }
 }
 
+@media (max-width: 444px) {
+  .card {
+    height: 7.65rem;
+    width: 6.4rem;
+  }
 
-@media (max-width: 444px){  
-    .card {
-      height: 7.65rem;
-      width: 6.4rem;
-    }
-
-    .spons_img {
-      height: 7.2rem;
-      width: 5.95rem;
-    }
-
+  .spons_img {
+    height: 7.2rem;
+    width: 5.95rem;
+  }
 }
