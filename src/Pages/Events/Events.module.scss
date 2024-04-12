@@ -142,13 +142,6 @@ button {
   width: 95%;
   height: 100%;
 }
-
-// media-queries
-@media screen and (max-width: 800px) {
-  .BottomDiv {
-    width: 85vw;
-  }
-}
 .BottomDiv2 {
   display: flex;
   flex-direction: column;
@@ -159,6 +152,7 @@ button {
   margin-bottom: 4rem;
   padding: 7%;
 }
+
 .card {
   background: linear-gradient(
     153deg,
@@ -198,5 +192,15 @@ button {
       width: 100%;
       font-size: 0.9rem;
     }
+  }
+}
+
+// media-queries
+@media screen and (max-width: 768px) {
+  .BottomDiv {
+    width: 85vw;
+  }
+  .EventText {
+    padding: 5% 10% 5% 10%;
   }
 }
