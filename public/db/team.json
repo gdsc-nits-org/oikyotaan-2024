@@ -38,7 +38,7 @@
         "name": "Antara Roy",
         "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712903920/oikotan/zvmriijqhknbuicrpci6.webp",
         "linkedin": "",
-        "facebook": "",
+        "facebook": "https://www.facebook.com/heida.saito",
         "instagram": "",
         "twitter": "",
         "github": "",
@@ -120,7 +120,7 @@
         "name": "Shyantani Choudhury",
         "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712903916/oikotan/aqgy9xqylz0q4jadtzda.webp",
         "linkedin": "",
-        "facebook": "",
+        "facebook": "https://www.facebook.com/shyantani.choudhury.3",
         "instagram": "",
         "twitter": "",
         "github": "",
@@ -219,7 +219,7 @@
         "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712903915/oikotan/lphifsuqt2qsb85rdgke.webp",
         "linkedin": "https://www.linkedin.com/in/rishi-raj-saha-696b44257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         "facebook": "https://www.facebook.com/rishiraj.saha.353?mibextid=ZbWKwL",
-        "instagram": "",
+        "instagram": "https://www.instagram.com/rishi_raj_saha/",
         "twitter": "",
         "github": "",
         "designation": "Web Developer"
@@ -287,24 +287,24 @@
 
       {
         "id": 24,
-        "name": "Jagatjyoti Deb ",
-        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712903912/oikotan/khykbgiw4pwj9wucfmsc.webp",
-        "linkedin": "https://www.linkedin.com/in/jagatjyotideb",
-        "facebook": "https://www.facebook.com/profile.php?id=100084536361943&mibextid=ZbWKwL",
-        "instagram": "https://www.instagram.com/dhruv_deb?igsh=ZXJubXBkdG1yb29z",
-        "twitter": "",
-        "github": "",
-        "designation": "UI/UX"
-      },
-
-      {
-        "id": 25,
         "name": "Siddharth Ghosh",
         "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712903912/oikotan/y9xny7mwjhyywntnhrxv.webp",
         "linkedin": "https://www.linkedin.com/in/siddharth-ghosh-18ba29251/",
         "facebook": "https://www.facebook.com/profile.php?id=100070117330528",
         "instagram": "https://www.instagram.com/z_maniac_sidd/",
         "twitter": "https://twitter.com/Z_maniac_sidd",
+        "github": "",
+        "designation": "UI/UX"  
+      },
+
+      {
+        "id": 25,
+        "name": "Jagatjyoti Deb ",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712903912/oikotan/khykbgiw4pwj9wucfmsc.webp",
+        "linkedin": "https://www.linkedin.com/in/jagatjyotideb",
+        "facebook": "https://www.facebook.com/profile.php?id=100084536361943&mibextid=ZbWKwL",
+        "instagram": "https://www.instagram.com/dhruv_deb?igsh=ZXJubXBkdG1yb29z",
+        "twitter": "",
         "github": "",
         "designation": "UI/UX"
       },

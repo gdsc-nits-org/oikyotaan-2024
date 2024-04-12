@@ -60,10 +60,9 @@ const Team = () => {
 
     return (
       <Swiper
-        className={styles.team}
+        className={styles.teamswiper}
         modules={[Autoplay, EffectCoverflow]}
         centeredSlides
-        initialSlide={Math.floor(members.length / 2)}
         slidesPerView={4}
         spaceBetween={-40}
         speed={500}

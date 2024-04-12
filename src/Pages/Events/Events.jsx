@@ -3,12 +3,14 @@ import { useEffect, useState } from "react";
 import { Pagination, Navigation } from "swiper/core";
 import EventHeader from "./EventHeader";
 import style from "./Events.module.scss";
-import EventsArr from "./Events.json";
 
 import "swiper/css/navigation";
 
 const Events = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  
+  const [eventData, setEventData] = useState(null);
+  const [swiperLoaded, setSwiperLoaded] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
 
   useEffect(() => {
     const handleResize = () => {
@@ -23,10 +25,35 @@ const Events = () => {
   }, []);
 
   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Dynamically import Swiper modules
+        const [{ default: Swiper }, { default: EffectCoverflow }] = await Promise.all([
+          import("swiper/react"),
+          import("swiper/core"),
+        ]);
+
+        // Set Swiper modules as global variables
+        window.Swiper = Swiper;
+        window.EffectCoverflow = EffectCoverflow;
+        const response = await fetch("/db/Events.json");
+        const data = await response.json();
+        setEventData(data);
+        setSwiperLoaded(true);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const renderSwiper = () => {
+    if (!swiperLoaded) return null;
     return (
       <div className={style.bottomParent}>
         <div className={style.BottomDiv}>
@@ -36,7 +63,7 @@ const Events = () => {
             modules={[Navigation, Pagination]}
             className={style.mySwiper}
           >
-            {EventsArr.map((e) => {
+            {eventData.map((e) => {
               return (
                 <SwiperSlide className={style.swiperclass} key={e.id}>
                   <img src={e.src} alt={e.id} className={style.image} />
@@ -55,7 +82,7 @@ const Events = () => {
     return (
       <div className={style.bottomParent}>
         <div className={style.BottomDiv2}>
-          {EventsArr.map((e) => {
+          {eventData.map((e) => {
             return (
               <div className={style.card} key={e.id}>
                 <div className={style.images}>
@@ -72,6 +99,10 @@ const Events = () => {
       </div>
     );
   };
+
+  if (!eventData) {
+    return <div>Unable to fetch data</div>; // Render nothing until data is fetched
+  }
 
   return (
     <div style={{ overflowX: "hidden" }}>
