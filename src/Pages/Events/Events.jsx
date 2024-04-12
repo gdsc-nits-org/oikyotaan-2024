@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Pagination, Navigation } from "swiper/core";
 import EventHeader from "./EventHeader";
 import style from "./Events.module.scss";
+import Loading from "../../Components/Loader/Loading";
 
 import "swiper/css/navigation";
 
@@ -101,8 +102,9 @@ const Events = () => {
   };
 
   if (!eventData) {
-    return <div>Unable to fetch data</div>; // Render nothing until data is fetched
+    return <Loading />; // Render nothing until data is fetched
   }
+  else if (!swiperLoaded) return <Loading />;
 
   return (
     <div style={{ overflowX: "hidden" }}>

@@ -7,6 +7,7 @@ import { Card } from "../../Components/Team/Card";
 import drumLeft from "./drum right.json";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
+import Loading from "../../Components/Loader/Loading";
 
 const Team = () => {
   const [teamData, setTeamData] = useState(null);
@@ -56,8 +57,6 @@ const Team = () => {
   };
 
   const renderSwiper = (members) => {
-    if (!swiperLoaded) return null;
-
     return (
       <Swiper
         className={styles.teamswiper}
@@ -102,8 +101,9 @@ const Team = () => {
   }, []);
 
   if (!teamData) {
-    return <div>Unable to fetch data</div>; // Render nothing until data is fetched
+    return <Loading />; // Render nothing until data is fetched
   }
+  else if (!swiperLoaded) return <Loading />;
 
   return (
     <div className={styles.wrapper}>

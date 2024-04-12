@@ -3,6 +3,28 @@
     "name": "Core",
     "members": [
       {
+        "id": 100,
+        "name": "Aniruddha Dutta",
+        "profile": "https://res.cloudinary.com/dhry5xscm/image/upload/v1694017416/gdsc%20seniors/team_pics/AniruddhaDutta_ipghak.webp",
+        "linkedin": "https://www.linkedin.com/in/phenyloder/",
+        "facebook": "https://www.facebook.com/phenyloder",
+        "instagram": "",
+        "twitter": "",
+        "designation": "Co-Ordinator"
+
+      },
+      {
+        "id": 101,
+        "name": "Shayan Debroy",
+        "profile":   "https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/ijk4s35qv06jbumfqrvl",
+        "linkedin":  "https://www.linkedin.com/in/shayan-debroy?trk=contact-info",
+        "facebook":"https://www.facebook.com/shayan.debroy.90",
+        "instagram": "",
+        "twitter": "",
+        "designation": "Co-Ordinator"
+
+      },
+      {
         "id": 1,
         "name": "Anurag Debnath",
         "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712903912/oikotan/bbx8tqkrt1wca3xkbedx.webp",
@@ -35,23 +57,23 @@
       },
       {
         "id": 4,
-        "name": "Antara Roy",
-        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712903920/oikotan/zvmriijqhknbuicrpci6.webp",
-        "linkedin": "",
-        "facebook": "https://www.facebook.com/heida.saito",
-        "instagram": "",
-        "twitter": "",
+        "name": "Jyotishka Bhattacharjee",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712903921/oikotan/pxhued5c3qodeqo7ffr3.webp",
+        "linkedin": "https://www.linkedin.com/in/jyotishka-b-32995712b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "facebook": "https://www.facebook.com/profile.php?id=100005647038947",
+        "instagram": "https://www.instagram.com/_jyo.tishka_?igsh=MTdlMWw5aDA3NHU5cw==",
+        "twitter": "https://x.com/equinoxMind?t=tDTZTcUjBb7061uJhV3ecg&s=09",
         "github": "",
         "designation": "Co-Ordinator"
       },
       {
         "id": 5,
-        "name": "Somadrita Halder ",
-        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712903917/oikotan/xp861b0lr0zqbhzx87wx.webp",
-        "linkedin": "https://www.linkedin.com/in/somadrita-halder-46156220a/",
-        "facebook": "https://www.facebook.com/somadrita.halder/",
-        "instagram": "https://www.instagram.com/somadrita_halder/?hl=en",
-        "twitter": "https://twitter.com/SHalder_180201",
+        "name": "Debopriya Das",
+        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712903923/oikotan/dkpbv3fcbrq1u5f9u7oy.webp",
+        "linkedin": "https://www.linkedin.com/in/debopriya-das-683710240",
+        "facebook": "https://www.facebook.com/profile.php?id=100075329296001&mibextid=ZbWKwL",
+        "instagram": "https://www.instagram.com/_debo._.priyaa_?igsh=N3FzZGdjbGYxMDRj",
+        "twitter": "https://twitter.com/Debopriya3210",
         "github": "",
         "designation": "Co-Ordinator"
       },
@@ -91,19 +113,6 @@
         "github": "",
         "designation": "Co-Ordinator"
       },
-
-      {
-        "id": 8,
-        "name": "Debopriya Das",
-        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712903923/oikotan/dkpbv3fcbrq1u5f9u7oy.webp",
-        "linkedin": "https://www.linkedin.com/in/debopriya-das-683710240",
-        "facebook": "https://www.facebook.com/profile.php?id=100075329296001&mibextid=ZbWKwL",
-        "instagram": "https://www.instagram.com/_debo._.priyaa_?igsh=N3FzZGdjbGYxMDRj",
-        "twitter": "https://twitter.com/Debopriya3210",
-        "github": "",
-        "designation": "Co-Ordinator"
-      },
-
       {
         "id": 9,
         "name": "Bidipta Datta",
@@ -159,18 +168,6 @@
         "facebook": "https://www.facebook.com/rohan.deb.908579",
         "instagram": "https://www.instagram.com/rohan.pxl/",
         "twitter": "",
-        "github": "",
-        "designation": "Co-Ordinator"
-      },
-
-      {
-        "id": 14,
-        "name": "Jyotishka Bhattacharjee",
-        "profile": "https://res.cloudinary.com/draptrzrc/image/upload/v1712903921/oikotan/pxhued5c3qodeqo7ffr3.webp",
-        "linkedin": "https://www.linkedin.com/in/jyotishka-b-32995712b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        "facebook": "https://www.facebook.com/profile.php?id=100005647038947",
-        "instagram": "https://www.instagram.com/_jyo.tishka_?igsh=MTdlMWw5aDA3NHU5cw==",
-        "twitter": "https://x.com/equinoxMind?t=tDTZTcUjBb7061uJhV3ecg&s=09",
         "github": "",
         "designation": "Co-Ordinator"
       }
