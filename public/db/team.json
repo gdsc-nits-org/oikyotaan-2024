@@ -1,29 +1,7 @@
 {
   "core": {
     "name": "Core",
-    "members": [
-      {
-        "id": 100,
-        "name": "Aniruddha Dutta",
-        "profile": "https://res.cloudinary.com/dhry5xscm/image/upload/v1694017416/gdsc%20seniors/team_pics/AniruddhaDutta_ipghak.webp",
-        "linkedin": "https://www.linkedin.com/in/phenyloder/",
-        "facebook": "https://www.facebook.com/phenyloder",
-        "instagram": "",
-        "twitter": "",
-        "designation": "Co-Ordinator"
-
-      },
-      {
-        "id": 101,
-        "name": "Shayan Debroy",
-        "profile":   "https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/ijk4s35qv06jbumfqrvl",
-        "linkedin":  "https://www.linkedin.com/in/shayan-debroy?trk=contact-info",
-        "facebook":"https://www.facebook.com/shayan.debroy.90",
-        "instagram": "",
-        "twitter": "",
-        "designation": "Co-Ordinator"
-
-      },
+    "members": [  
       {
         "id": 1,
         "name": "Anurag Debnath",
@@ -176,6 +154,28 @@
   "tech": {
     "name": "Tech",
     "members": [
+      {
+        "id": 100,
+        "name": "Aniruddha Dutta",
+        "profile": "https://res.cloudinary.com/dhry5xscm/image/upload/v1694017416/gdsc%20seniors/team_pics/AniruddhaDutta_ipghak.webp",
+        "linkedin": "https://www.linkedin.com/in/phenyloder/",
+        "facebook": "https://www.facebook.com/phenyloder",
+        "instagram": "",
+        "twitter": "",
+        "designation": "Co-Ordinator"
+
+      },
+      {
+        "id": 101,
+        "name": "Shayan Debroy",
+        "profile":   "https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/ijk4s35qv06jbumfqrvl",
+        "linkedin":  "https://www.linkedin.com/in/shayan-debroy?trk=contact-info",
+        "facebook":"https://www.facebook.com/shayan.debroy.90",
+        "instagram": "",
+        "twitter": "",
+        "designation": "Co-Ordinator"
+
+      },
       {
         "id": 15,
         "name": "Bijay Jiwrajka ",
