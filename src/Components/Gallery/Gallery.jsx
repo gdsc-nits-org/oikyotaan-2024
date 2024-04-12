@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 import './styles.css';
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/core';
 import GalleryHeader from './GalleryHeader/GalleryHeader';
-import GalleryImages from './galleryImages.json'
+import GalleryImages from './gallery.json'
 
 
 
@@ -30,7 +30,7 @@ const Gallery = ()=> {
         }}
 
         autoplay={{
-          delay: 1500,
+          delay: 1000,
           disableOnInteraction: false,
         }}
         breakpoints={{

@@ -47,8 +47,8 @@
   {   
       "id": 10,
       "title": "image3",
-      "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836130/Oikyotaan/Gallery/Screenshot_2024-04-11_171341_kqph1r.webp"
-  },
+      "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712858673/Oikyotaan/Gallery/Screenshot_2024-04-11_233415_f3uigq.webp"
+},
   {
       "id":11,
       "title": "image1",
@@ -70,7 +70,7 @@
       "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836133/Oikyotaan/Gallery/Screenshot_2024-04-11_171451_hqx2pq.webp"
   },
   {   
-      "id": 14,
+      "id": 15,
       "title": "image3",
       "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836171/Oikyotaan/Gallery/Screenshot_2024-04-11_171528_bldidh.webp"
   }
