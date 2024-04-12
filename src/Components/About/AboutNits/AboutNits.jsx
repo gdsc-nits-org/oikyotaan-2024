@@ -5,10 +5,10 @@ import rdrum from "../../../Lottiefiles/drum right.json";
 const AboutNits = () => {
   return (
     <div className={styles.main}>
-      <div className={styles.top} >
+      <div className={styles.top}>
         <div className={styles.inner}>
           <div className={styles.ldrum}>
-            <Lottie animationData={rdrum} loop/>
+            <Lottie animationData={rdrum} loop />
           </div>
           <div className={styles.header}>
             <p className={styles.heading}>About Nits</p>
@@ -19,7 +19,7 @@ const AboutNits = () => {
             />
           </div>
           <div className={styles.rdrum}>
-            <Lottie animationData={rdrum} loop/>
+            <Lottie animationData={rdrum} loop />
           </div>
         </div>
       </div>

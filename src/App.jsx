@@ -26,10 +26,7 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   return (
     <>
-      {
-        loading &&
-        <Loading />
-      }
+      {loading && <Loading />}
       <Suspense fallback={<Loading />}>
         <Navbar />
         <Routes>
