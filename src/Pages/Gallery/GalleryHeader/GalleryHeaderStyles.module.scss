@@ -51,15 +51,14 @@
   }
 }
 
-@media screen and (max-width:364px) {
-  .top{
+@media screen and (max-width: 364px) {
+  .top {
     scale: 0.8;
-    .header{
+    .header {
       width: 33%;
     }
-    .heading{
+    .heading {
       white-space: break-spaces;
     }
-
   }
 }

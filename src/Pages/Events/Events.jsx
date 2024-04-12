@@ -44,13 +44,12 @@ const Events = () => {
                   <div className={style.EventText}>{e.text}</div>
                 </SwiperSlide>
               );
-            })
-            }
+            })}
           </Swiper>
         </div>
       </div>
-    )
-  }
+    );
+  };
 
   const renderEvents = () => {
     return (
@@ -68,14 +67,11 @@ const Events = () => {
                 </div>
               </div>
             );
-          })
-          }
+          })}
         </div>
       </div>
-
-    )
-  }
-
+    );
+  };
 
   return (
     <div style={{ overflowX: "hidden" }}>
