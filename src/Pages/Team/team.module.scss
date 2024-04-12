@@ -78,12 +78,10 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
       width: 100%;
 
       h3 {
         color: #fff;
-
         text-align: center;
         font-family: var(--font-1);
         font-size: 2.25rem;
@@ -97,7 +95,16 @@
       .team {
         width: 100%;
         margin-top: 3%;
-
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem 10vw;
+      }
+      .teamswiper{
+        width: 100%;
+        height: 20rem;
+        margin-top: 3%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
