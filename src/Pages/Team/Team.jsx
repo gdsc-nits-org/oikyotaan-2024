@@ -12,20 +12,18 @@ const Team = () => {
   const [teamData, setTeamData] = useState(null);
   const [swiperLoaded, setSwiperLoaded] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
-  
-  
-    useEffect(() => {
-      const handleResize = () => {
-        setIsSmallScreen(window.innerWidth < 768);
-      };
-  
-      window.addEventListener("resize", handleResize);
-  
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
