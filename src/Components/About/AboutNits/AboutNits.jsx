@@ -27,12 +27,7 @@ const AboutNits = () => {
       <div className={styles.bottom}>
         <div className={styles.left}>
           <p className={styles.paragraph}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Amet nisl purus in mollis nunc
-            sed id. Lobortis elementum nibh tellus molestie nunc. Ac feugiat sed lectus
-            vestibulum mattis ullamcorper velit. Sed ullamcorper morbi tincidunt ornare
-            massa eget egestas. Et molestie ac feugiat sed lectus vestibulum mattis
-            ullamcorper. Eget aliquet nibh praesent tristique magna sit amet purus.
+          A bright future requires a bright start. NITS abides by this mantra. The institute believes in equipping students with the knowledge and skills in their chosen streams, inculcate values, identify hidden talents, and provide opportunities for students to realize their full potential. It facilitates the requisite support and encouragement via various cultural and academic activities to shape the body and soul. It has transformed into a sought out centre of learning.
           </p>
         </div>
         <div className={styles.right}>

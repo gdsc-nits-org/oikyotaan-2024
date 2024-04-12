@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "title": "image1",
+        "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836127/Oikyotaan/Gallery/Screenshot_2024-04-11_171218_tidavq.webp"
+    },
+    {
+        "id": 2,
+        "title": "image2",
+        "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836176/Oikyotaan/Gallery/Screenshot_2024-04-11_171805_hzg17p.webp"
+    },
+    {   
+        "id": 3,
+        "title": "image3",
+        "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836129/Oikyotaan/Gallery/Screenshot_2024-04-11_171241_stp4nv.webp"
+    },
+    {
+      "id": 4,
+      "title": "image1",
+      "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836130/Oikyotaan/Gallery/Screenshot_2024-04-11_171302_ppn7lo.webp"
+  },
+  {
+      "id": 5,
+      "title": "image2",
+      "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836130/Oikyotaan/Gallery/Screenshot_2024-04-11_171437_lzkow6.webp"
+  },
+  {   
+      "id": 6,
+      "title": "image3",
+      "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836175/Oikyotaan/Gallery/Screenshot_2024-04-11_171653_wtnfah.webp"
+  },
+  {
+      "id": 7,
+      "title": "image1",
+      "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836172/Oikyotaan/Gallery/Screenshot_2024-04-11_171545_ocyqxx.webp"
+  },
+  {
+      "id": 8,
+      "title": "image2",
+      "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836130/Oikyotaan/Gallery/Screenshot_2024-04-11_171341_kqph1r.webp"
+  },
+  {   
+      "id": 9,
+      "title": "image3",
+      "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836174/Oikyotaan/Gallery/Screenshot_2024-04-11_171633_g8s0dg.webp"
+  },
+  {   
+      "id": 10,
+      "title": "image3",
+      "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712858673/Oikyotaan/Gallery/Screenshot_2024-04-11_233415_f3uigq.webp"
+  },
+  {
+      "id":11,
+      "title": "image1",
+      "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836173/Oikyotaan/Gallery/Screenshot_2024-04-11_171609_zewknt.webp"
+  },
+  {
+      "id":12,
+      "title": "image2",
+      "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836131/Oikyotaan/Gallery/Screenshot_2024-04-11_171420_vmrtby.webp"
+  },
+  {   
+      "id": 13,
+      "title": "image3",
+      "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836132/Oikyotaan/Gallery/Screenshot_2024-04-11_171507_obdgqw.webp"
+  },
+  {   
+      "id": 14,
+      "title": "image3",
+      "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836133/Oikyotaan/Gallery/Screenshot_2024-04-11_171451_hqx2pq.webp"
+  },
+  {   
+      "id": 15,
+      "title": "image3",
+      "imageAddress": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712836171/Oikyotaan/Gallery/Screenshot_2024-04-11_171528_bldidh.webp"
+  }
+  
+  ]
