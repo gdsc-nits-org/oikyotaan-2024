@@ -1,14 +1,14 @@
 [
   {
-    "id": 1,
-    "name": "Snigdhajit",
-    "img": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712487792/Oikyotaan/artist_makn4z.svg",
-    "about": " Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate"
+    "id":1,
+    "name":"Sneha Bhattacharjee",
+    "img":"https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712904722/Oikyotaan/Rectangle_2_yucyk8.svg",
+    "about":"Sneha Bhattacharya, a talented singer, has made her mark in the music industry. She has lent her melodious voice to various musical albums, spanning genres like Indian Film Pop, Pop, and Bengali. Notably, Sneha participated in the prestigious reality show Sa Re Ga Ma Pa, where her performances garnered immense fame"
   },
   {
-    "id": 2,
-    "name": "Snigdhajit",
-    "img": "https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712487792/Oikyotaan/artist_makn4z.svg",
-    "about": " Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate"
+    "id":2,
+    "name":"The Folk Diaryz",
+    "img":"https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712904723/Oikyotaan/Rectangle_1_y20cx4.svg",
+    "about":"The Folk Diaryz, a captivating band hailing from West Bengal (Kolkata), delves into the rich tapestry of Bengali folk music. With a perfect blend of traditional melodies and modern musical arrangements, they re-create old favorites like Lalon, Hason Raja, and Abdul Karim"
   }
 ]
