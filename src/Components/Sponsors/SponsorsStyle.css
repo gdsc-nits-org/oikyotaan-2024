@@ -1,8 +1,5 @@
 .container {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-}
-
-.SponsorCardContainer {
-    margin-top: 2rem;
+  padding-top:0;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
 }

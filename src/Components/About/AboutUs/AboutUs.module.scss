@@ -13,7 +13,6 @@
   background-color: transparent;
   overflow: hidden;
   white-space: nowrap;
-  margin-top: 4rem;
   .slide {
     display: inline-block;
     animation: 15s slide infinite linear;
@@ -96,7 +95,7 @@
   width: 100vw;
   padding-top: 0;
   padding-bottom: 0;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   max-height: max-content;
   display: flex;
   flex-direction: row;
@@ -150,38 +149,60 @@
     }
     .parent {
       height: 5rem;
-      .btn_parent {
-        margin-top: 1rem;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        z-index: 1;
-        background-color: #fd5282;
-        padding: 12px 15px;
-        border-radius: 10px;
-        max-width: fit-content;
-        cursor: pointer;
-        .btn {
-          font-family: "Snippet", sans-serif;
-          font-size: 1.3rem;
-          color: #ffffff;
-          text-decoration: none;
-          text-transform: uppercase;
-          margin-top: -1px;
-          font-weight: 300;
-          z-index: 2;
-          text-align: center;
-          white-space: nowrap;
-        }
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn_parent {
+      position: absolute;
+      height: 3rem;
+      width: 8rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #eb2059;
+      padding: 12px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      overflow: hidden;
+      .btn {
+        font-family: "Snippet", sans-serif;
+        font-size: 1.3rem;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-top: -1px;
+        font-weight: 300;
+        z-index: 2;
+        text-align: center;
+        white-space: nowrap;
       }
     }
-  }
-  .btn_parent:hover {
-    border: 2px solid #ffffff;
-  }
-  .btn:hover {
-    margin-top: -2px;
+    .btn_parent::before {
+      content: "";
+      position: absolute;
+      height: 50%;
+      width: 100%;
+      // border-radius: 10px;
+      background-color: #ffffff;
+      animation: animate 4s linear infinite;
+    }
+    .btn_parent::after {
+      content: "";
+      position: absolute;
+      background-color: #eb2059;
+      border-radius: 10px;
+      inset: 3px;
+    }
+    @keyframes animate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   }
 }
 @media screen and (max-width: 758px) {
@@ -308,10 +329,5 @@
         left: 25rem;
       }
     }
-  }
-}
-@media screen and (max-width: 758px) {
-  .slide_parent {
-    margin-top: 3.5rem;
   }
 }

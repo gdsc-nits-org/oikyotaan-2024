@@ -42,3 +42,20 @@
 body {
   background-color: #3d029d;
 }
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #3d029d 0%, #3f1560 100%);
+  border: 1px solid black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    153deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-radius: 2px;
+}

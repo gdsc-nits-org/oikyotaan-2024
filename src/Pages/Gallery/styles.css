@@ -1,5 +1,20 @@
+
+:root {
+  --swiper-pagination-color: rgba(255, 255, 255, 0.612);
+}
+
+
 .galleryPage-container {
-  padding-top: 8rem;
+  padding-top: 5.5rem;
+  min-height: 100vh;
+  width:100%;
+}
+
+@media screen and (max-width: 758px){
+  .galleryPage-container {
+    min-height: fit-content;
+    padding-bottom: 6rem;
+  }
 }
 
 .swiper {
