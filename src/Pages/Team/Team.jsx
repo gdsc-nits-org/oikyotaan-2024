@@ -3,25 +3,54 @@ import Lottie from "lottie-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCoverflow } from "swiper/core";
 import styles from "./team.module.scss";
-import data from "../../../public/db/team.json";
 import { Card } from "../../Components/Team/Card";
 import drumLeft from "./drum right.json";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 
 const Team = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [teamData, setTeamData] = useState(null);
+  const [swiperLoaded, setSwiperLoaded] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+  
+  
+    useEffect(() => {
+      const handleResize = () => {
+        setIsSmallScreen(window.innerWidth < 768);
+      };
+  
+      window.addEventListener("resize", handleResize);
+  
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
+
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 768);
+    const fetchData = async () => {
+      try {
+        // Dynamically import Swiper modules
+        const [{ default: Swiper }, { default: EffectCoverflow }] = await Promise.all([
+          import("swiper/react"),
+          import("swiper/core"),
+        ]);
+
+        // Set Swiper modules as global variables
+        window.Swiper = Swiper;
+        window.EffectCoverflow = EffectCoverflow;
+
+        // Fetch team data
+        const response = await fetch("/db/team.json");
+        const data = await response.json();
+        setTeamData(data);
+        setSwiperLoaded(true);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
     };
 
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    fetchData();
   }, []);
 
   const renderTeamMembers = (members) => {
@@ -29,6 +58,8 @@ const Team = () => {
   };
 
   const renderSwiper = (members) => {
+    if (!swiperLoaded) return null;
+
     return (
       <Swiper
         className={styles.team}
@@ -68,9 +99,14 @@ const Team = () => {
       </Swiper>
     );
   };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  if (!teamData) {
+    return <div>Unable to fetch data</div>; // Render nothing until data is fetched
+  }
 
   return (
     <div className={styles.wrapper}>
@@ -103,17 +139,17 @@ const Team = () => {
         <div className={styles.teamContainer}>
           <h3>CORE TEAM</h3>
           {!isSmallScreen && (
-            <div className={styles.team}>{renderTeamMembers(data.core.members)}</div>
+            <div className={styles.team}>{renderTeamMembers(teamData.core.members)}</div>
           )}
-          {isSmallScreen && renderSwiper(data.core.members)}
+          {isSmallScreen && renderSwiper(teamData.core.members)}
         </div>
 
         <div className={styles.teamContainer}>
           <h3>TECH TEAM</h3>
           {!isSmallScreen && (
-            <div className={styles.team}>{renderTeamMembers(data.tech.members)}</div>
+            <div className={styles.team}>{renderTeamMembers(teamData.tech.members)}</div>
           )}
-          {isSmallScreen && renderSwiper(data.tech.members)}
+          {isSmallScreen && renderSwiper(teamData.tech.members)}
         </div>
       </div>
     </div>

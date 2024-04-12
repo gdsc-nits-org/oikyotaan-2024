@@ -18,6 +18,7 @@ export const Card = ({ member }) => {
       className={`${styles.wrapper} ${swiperSlider != null && (!swiperSlider.isActive ? styles.inActive : "")}`}
     >
       <div className={styles.imageFrame}></div>
+      <div className={styles.imageBg}></div>
       <img className={styles.profileImage} src={member.profile} alt={member.name} />
 
       <div className={styles.details}>
