@@ -1,5 +1,11 @@
 import React from "react";
-import { FaGithub, FaLinkedin , FaTwitterSquare ,FaFacebook , FaInstagram } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaTwitterSquare,
+  FaFacebook,
+  FaInstagram,
+} from "react-icons/fa";
 
 import { useSwiperSlide } from "swiper/react";
 import styles from "./card.module.scss";

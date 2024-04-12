@@ -1,15 +1,14 @@
 [
-    {
-      "id": 1,
-      "name": "Morning rally",
-      "text": "Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero, et velit interdum, ac aliquet odio mattis.Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Vorem ipsum",
-      "src": "https://res.cloudinary.com/dl0knguhb/image/upload/v1712128630/centreimg_ur8gfu.webp"
-    },
-    {
-      "id": 2,
-      "name": "Shokaler Adda",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero, et velit interdum, ac aliquet odio mattis.Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Vorem ipsum",
-      "src": "https://res.cloudinary.com/dl0knguhb/image/upload/v1712128630/centreimg_ur8gfu.webp"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Morning rally",
+    "text": "Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero, et velit interdum, ac aliquet odio mattis.Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Vorem ipsum",
+    "src": "https://res.cloudinary.com/dl0knguhb/image/upload/v1712128630/centreimg_ur8gfu.webp"
+  },
+  {
+    "id": 2,
+    "name": "Shokaler Adda",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero, et velit interdum, ac aliquet odio mattis.Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Vorem ipsum",
+    "src": "https://res.cloudinary.com/dl0knguhb/image/upload/v1712128630/centreimg_ur8gfu.webp"
+  }
+]
