@@ -148,12 +148,7 @@
         "twitter": "",
         "github": "",
         "designation": "Co-Ordinator"
-      }
-    ]
-  },
-  "tech": {
-    "name": "Tech",
-    "members": [
+      },
       {
         "id": 100,
         "name": "Aniruddha Dutta",
@@ -175,7 +170,12 @@
         "twitter": "",
         "designation": "Co-Ordinator"
 
-      },
+      }
+    ]
+  },
+  "tech": {
+    "name": "Tech",
+    "members": [
       {
         "id": 15,
         "name": "Bijay Jiwrajka ",
