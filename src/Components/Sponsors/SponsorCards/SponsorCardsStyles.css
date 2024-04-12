@@ -1,5 +1,4 @@
 .grid_container {
-  place-content: center;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
