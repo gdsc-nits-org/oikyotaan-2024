@@ -23,7 +23,7 @@ const Home = () => {
   };
 
   return (
-    <main className={styles.home}>
+    <main className={styles.home}  onClick={toggle}>
       <Hero />
       <AboutUs />
       <AboutNits />
