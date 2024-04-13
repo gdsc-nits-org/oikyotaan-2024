@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 import styles from "./Home.module.scss";
 import { Gallery, Sponsors, AboutUs, AboutNits } from "../../Components";
 import Hero from "../../Components/Hero/Hero";
@@ -13,6 +13,15 @@ const Home = () => {
     ReactGA.pageview(window.location.pathname);
   },[])
 
+  const audioRef = useRef(null);
+  const [play, setPlay] = useState(false);
+  const toggle = () => {
+    if (!play) {
+      audioRef.current.play();
+      setPlay(true);
+    }
+  };
+
   return (
     <main className={styles.home}>
       <Hero />
@@ -20,6 +29,7 @@ const Home = () => {
       <AboutNits />
       <Gallery />
       <Sponsors />
+      <audio src="/audio/home.mp3" autoPlay ref={audioRef}></audio>
     </main>
   );
 };
