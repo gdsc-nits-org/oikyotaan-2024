@@ -1,7 +1,14 @@
-import style from "./Error.module.scss";
+import styles from "./Error.module.scss";
 
 const Error = () => {
-  return <div className={style.error}>Error</div>;
+  return(
+  <main className={styles.container}>
+  <div className={styles.error}>404</div>
+  <br />
+  <br />
+  <span className={styles.info}>File not found</span>
+</main>
+  )
 };
 
 export default Error;

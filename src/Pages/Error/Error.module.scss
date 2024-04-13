@@ -1,0 +1,166 @@
+
+.container {
+    background: linear-gradient(to bottom, #3d029d 0%, #3f1560 100%);
+    color: white;
+    overflow: hidden;
+    height: 100vh;
+    user-select: none;
+  }
+  
+  .error {
+    text-align: center;
+    font-size: 6rem;
+    text-align: center;
+    width: 6.25rem;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -3.75rem;
+    right: 0;
+    animation: noise 2s linear infinite;
+  }
+  
+  .error:after {
+    content: "404";
+    font-size: 6.25rem;
+    text-align: center;
+    width: 9.375rem;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    color: blue;
+    animation: noise-1 0.2s linear infinite;
+  }
+  
+  .error:before {
+    content: "404";
+    font-size: 6.25rem;
+    text-align: center;
+    width: 6.25rem;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    color: teal;
+    animation: noise-2 0.2s linear infinite;
+  }
+  
+  .info {
+    text-align: center;
+    font-size: 1rem;
+    text-align: center;
+    width: 12.5rem;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    margin: auto;
+    position: absolute;
+    top: 8.75rem;
+    bottom: 0;
+    left: 0.75rem;
+    right: 0;
+    animation: noise-3 1s linear infinite;
+  }
+  
+  @keyframes noise {
+    0%,
+    3%,
+    5%,
+    42%,
+    44%,
+    100% {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+    4.3% {
+      opacity: 1;
+      transform: scaleY(1.7);
+    }
+    43% {
+      opacity: 1;
+      transform: scaleX(1.5);
+    }
+  }
+  
+  @keyframes noise-1 {
+    0%,
+    20%,
+    40%,
+    60%,
+    70%,
+    90% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 0.5;
+      left: -6px;
+    }
+    80% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 0.6;
+      left: 2px;
+    }
+  }
+  
+  @keyframes noise-2 {
+    0%,
+    20%,
+    40%,
+    60%,
+    70%,
+    90% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 0.5;
+      left: 6px;
+    }
+    80% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 0.6;
+      left: -2px;
+    }
+  }
+  
+  @keyframes noise-3 {
+    0%,
+    3%,
+    5%,
+    42%,
+    44%,
+    100% {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+    4.3% {
+      opacity: 1;
+      transform: scaleY(4);
+    }
+    43% {
+      opacity: 1;
+      transform: scaleX(10) rotate(60deg);
+    }
+  }

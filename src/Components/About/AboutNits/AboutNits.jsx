@@ -14,6 +14,7 @@ const AboutNits = () => {
             <p className={styles.heading}>About Nits</p>
             <img
               className={styles.logo}
+              loading="lazy"
               src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712169046/Oikyotaan/vecteezy_text-divider-calligraphic-ornament-vintage-decorations_11839102-removebg-preview_1_nro44d.svg"
               alt="logo"
             />
@@ -34,6 +35,7 @@ const AboutNits = () => {
           <div className={styles.owl1}>
             <img
               className={styles.owl}
+              loading="lazy"
               src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1712512772/Oikyotaan/lottie_compressed_rdi832.gif"
               alt="owl"
             />
